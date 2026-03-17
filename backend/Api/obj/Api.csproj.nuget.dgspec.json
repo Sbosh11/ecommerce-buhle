@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj": {}
+    "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj": {}
   },
   "projects": {
-    "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj": {
+    "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj",
+        "projectUniqueName": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj",
+        "projectPath": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj",
         "packagesPath": "C:\\Users\\Sibongile\\.nuget\\packages\\",
-        "outputPath": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\obj\\",
+        "outputPath": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sibongile\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,18 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.5, )"
             }
           },
           "imports": [

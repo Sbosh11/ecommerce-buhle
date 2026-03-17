@@ -1,38 +1,46 @@
 using Api.Data;
-using Microsoft.EntityFrameworkCore;
-using Api.Data;
 using Api.Seed;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add DbContext using SQLite (for portfolio simplicity)
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// Add controllers
+// Controllers
 builder.Services.AddControllers();
 
-// Add Swagger
+// DbContext SQLite
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=ecommerce.db"));
+
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Seed database
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     DbSeeder.Seed(context);
 }
 
-// Swagger middleware
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// Enable serving static files (wwwroot)
+app.UseStaticFiles();
+
+app.UseHttpsRedirection();
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();
