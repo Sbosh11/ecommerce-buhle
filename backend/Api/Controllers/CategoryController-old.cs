@@ -1,4 +1,4 @@
-using Api.Data;
+/*using Api.Data;
 using Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -39,4 +39,4 @@ namespace Api.Controllers
             return category;
         }
     }
-}
+}*/
