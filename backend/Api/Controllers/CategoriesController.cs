@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers
-{ 
+{
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {
         private readonly AppDbContext _context;
+
         public CategoriesController(AppDbContext context)
         {
             _context = context;
@@ -56,7 +57,7 @@ namespace Api.Controllers
                         Stock = v.Stock
                     }).ToList()
                 }).ToList()
-            });
+            }).ToList();
 
             return Ok(result);
         }

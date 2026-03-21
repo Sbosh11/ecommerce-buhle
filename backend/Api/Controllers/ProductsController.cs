@@ -18,27 +18,62 @@ namespace Api.Controllers
 
         // GET: api/products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts(
+        public async Task<ActionResult> GetProducts(
             [FromQuery] int? categoryId,
             [FromQuery] string? colour,
-            [FromQuery] string? size)
+            [FromQuery] string? size,
+            [FromQuery] string? search,
+            [FromQuery] string? sort,
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 10)
         {
+            // Safety limits
+            page = page < 1 ? 1 : page;
+            pageSize = pageSize > 50 ? 50 : pageSize;
+
             var query = _context.Products
                 .Include(p => p.Images)
                 .Include(p => p.Variants)
-                .Include(p => p.Category)
                 .AsQueryable();
 
+            // Filtering
             if (categoryId.HasValue)
                 query = query.Where(p => p.CategoryId == categoryId.Value);
 
             if (!string.IsNullOrEmpty(colour))
-                query = query.Where(p => p.Variants.Any(v => v.Colour.ToLower() == colour.ToLower()));
+                query = query.Where(p =>
+                    p.Variants.Any(v => v.Colour.ToLower() == colour.ToLower()));
 
             if (!string.IsNullOrEmpty(size))
-                query = query.Where(p => p.Variants.Any(v => v.Size.ToLower() == size.ToLower()));
+                query = query.Where(p =>
+                    p.Variants.Any(v => v.Size.ToLower() == size.ToLower()));
 
-            var products = await query.ToListAsync();
+            // Search
+            if (!string.IsNullOrEmpty(search))
+                query = query.Where(p =>
+                    p.Name.ToLower().Contains(search.ToLower()) ||
+                    p.Brand.ToLower().Contains(search.ToLower()));
+
+            // Sorting
+            query = sort switch
+            {
+                "price_asc" => query.OrderBy(p =>
+                    p.Variants.Any() ? p.Variants.Min(v => v.Price) : p.Price),
+
+                "price_desc" => query.OrderByDescending(p =>
+                    p.Variants.Any() ? p.Variants.Min(v => v.Price) : p.Price),
+
+                "name" => query.OrderBy(p => p.Name),
+
+                _ => query.OrderBy(p => p.Id)
+            };
+
+            var totalCount = await query.CountAsync();
+
+            var products = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
 
             var result = products.Select(p => new ProductDto
             {
@@ -46,14 +81,18 @@ namespace Api.Controllers
                 Name = p.Name,
                 Slug = p.Slug,
                 Description = p.Description,
-                Price = p.Price,
+                Price = p.Variants.Any()
+                    ? p.Variants.Min(v => v.Price)
+                    : p.Price,
                 Brand = p.Brand,
                 CategoryId = p.CategoryId,
+
                 Images = p.Images.Select(i => new ProductImageDto
                 {
                     Id = i.Id,
                     Url = i.Url
                 }).ToList(),
+
                 Variants = p.Variants.Select(v => new ProductVariantDto
                 {
                     Id = v.Id,
@@ -64,7 +103,13 @@ namespace Api.Controllers
                 }).ToList()
             }).ToList();
 
-            return Ok(result);
+            return Ok(new
+            {
+                totalCount,
+                page,
+                pageSize,
+                data = result
+            });
         }
 
         // GET: api/products/{id}
@@ -74,7 +119,6 @@ namespace Api.Controllers
             var product = await _context.Products
                 .Include(p => p.Images)
                 .Include(p => p.Variants)
-                .Include(p => p.Category)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null)
@@ -86,14 +130,18 @@ namespace Api.Controllers
                 Name = product.Name,
                 Slug = product.Slug,
                 Description = product.Description,
-                Price = product.Price,
+                Price = product.Variants.Any()
+                    ? product.Variants.Min(v => v.Price)
+                    : product.Price,
                 Brand = product.Brand,
                 CategoryId = product.CategoryId,
+
                 Images = product.Images.Select(i => new ProductImageDto
                 {
                     Id = i.Id,
                     Url = i.Url
                 }).ToList(),
+
                 Variants = product.Variants.Select(v => new ProductVariantDto
                 {
                     Id = v.Id,
@@ -112,7 +160,6 @@ namespace Api.Controllers
         public async Task<ActionResult<IEnumerable<ProductDto>>> GetRelated(int id)
         {
             var product = await _context.Products
-                .Include(p => p.Category)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null)
@@ -131,14 +178,18 @@ namespace Api.Controllers
                 Name = p.Name,
                 Slug = p.Slug,
                 Description = p.Description,
-                Price = p.Price,
+                Price = p.Variants.Any()
+                    ? p.Variants.Min(v => v.Price)
+                    : p.Price,
                 Brand = p.Brand,
                 CategoryId = p.CategoryId,
+
                 Images = p.Images.Select(i => new ProductImageDto
                 {
                     Id = i.Id,
                     Url = i.Url
                 }).ToList(),
+
                 Variants = p.Variants.Select(v => new ProductVariantDto
                 {
                     Id = v.Id,
