@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Controllers
 builder.Services.AddControllers();
 
-// DbContext SQLite
+// DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=ecommerce.db"));
 
@@ -31,7 +31,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Enable serving static files (wwwroot)
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
@@ -39,8 +38,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
 app.Run();

@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Api.Data;
 using Api.Models;
 
@@ -7,86 +8,49 @@ namespace Api.Seed
     {
         public static void Seed(AppDbContext context)
         {
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
 
-            if (!context.Categories.Any())
+            if (context.Categories.Any() || context.Products.Any())
+                return;
+
+            var json = File.ReadAllText("Seed/seedData.json");
+
+            var options = new JsonSerializerOptions
             {
-                var categories = new[]
+                PropertyNameCaseInsensitive = true
+            };
+
+            var data = JsonSerializer.Deserialize<SeedData>(json, options);
+
+            if (data == null) return;
+
+            context.Categories.AddRange(data.Categories);
+            context.SaveChanges();
+
+            foreach (var product in data.Products)
+            {
+                var newProduct = new Product
                 {
-                    new Category { Name = "Arrival", Slug = "arrival" },
-                    new Category { Name = "Women", Slug = "women" },
-                    new Category { Name = "Men", Slug = "men" },
-                    new Category { Name = "Kids", Slug = "kids" },
-                    new Category { Name = "Sports", Slug = "sports" },
+                    Name = product.Name,
+                    Slug = product.Slug,
+                    Description = product.Description,
+                    Brand = product.Brand,
+                    CategoryId = product.CategoryId,
+
+                    Variants = product.Variants.Select(v => new ProductVariant
+                    {
+                        Size = v.Size,
+                        Colour = v.Colour,
+                        Price = v.Price,
+                        Stock = v.Stock,
+                        ImageUrl = v.ImageUrl
+                    }).ToList()
                 };
-                context.Categories.AddRange(categories);
-                context.SaveChanges();
+
+                context.Products.Add(newProduct);
             }
 
-            if (!context.Products.Any())
-            {
-                var arrival = context.Categories.First(c => c.Slug == "arrival");
-                var women = context.Categories.First(c => c.Slug == "women");
-                var men = context.Categories.First(c => c.Slug == "men");
-
-                var products = new List<Product>
-                {
-                    new Product
-                    {
-                        Name = "Classic Sneakers",
-                        Description = "Comfortable sneakers for everyday wear.",
-                        Price = 1200,
-                        Brand = "Nike",
-                        CategoryId = men.Id,
-                        Variants = new List<ProductVariant>
-                        {
-                            new ProductVariant { Size = "M", Colour = "Black", Stock = 10, Price = 1200 },
-                            new ProductVariant { Size = "L", Colour = "White", Stock = 5, Price = 1200 }
-                        },
-                        Images = new List<ProductImage>
-                        {
-                            new ProductImage { Url = "/images/classic-sneakers-1.webp" },
-                            new ProductImage { Url = "/images/classic-sneakers-2.webp" }
-                        }
-                    },
-                    new Product
-                    {
-                        Name = "Sporty T-Shirt",
-                        Description = "Lightweight T-shirt for workouts.",
-                        Price = 400,
-                        Brand = "Adidas",
-                        CategoryId = women.Id,
-                        Variants = new List<ProductVariant>
-                        {
-                            new ProductVariant { Size = "S", Colour = "Red", Stock = 15, Price = 400 },
-                            new ProductVariant { Size = "M", Colour = "Blue", Stock = 12, Price = 400 }
-                        },
-                        Images = new List<ProductImage>
-                        {
-                            new ProductImage { Url = "/images/sporty-tshirt-1.webp" }
-                        }
-                    },
-                    new Product
-                    {
-                        Name = "Arrival Hoodie",
-                        Description = "New arrival hoodie for casual wear.",
-                        Price = 800,
-                        Brand = "Puma",
-                        CategoryId = arrival.Id,
-                        Variants = new List<ProductVariant>
-                        {
-                            new ProductVariant { Size = "M", Colour = "Grey", Stock = 20, Price = 800 },
-                            new ProductVariant { Size = "L", Colour = "Black", Stock = 10, Price = 800 }
-                        },
-                        Images = new List<ProductImage>
-                        {
-                            new ProductImage { Url = "/images/arrival-hoodie-1.webp" }
-                        }
-                    }
-                };
-                context.Products.AddRange(products);
-                context.SaveChanges();
-            }
+            context.SaveChanges();
         }
     }
 }
