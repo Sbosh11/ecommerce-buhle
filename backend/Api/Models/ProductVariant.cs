@@ -1,20 +1,15 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace Api.Models
+namespace Api.Dtos
 {
-    public class ProductVariant
+    public class ProductVariantDto
     {
         public int Id { get; set; }
 
-        public string Size { get; set; } = string.Empty;
-        public string Colour { get; set; } = string.Empty;
+        public string Size { get; set; } = "";
+        public string Colour { get; set; } = "";
 
         public decimal Price { get; set; }
         public int Stock { get; set; }
 
         public string ImageUrl { get; set; } = "";
-
-        public int ProductId { get; set; }
-        public Product? Product { get; set; }
     }
 }

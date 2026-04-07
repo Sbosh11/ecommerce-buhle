@@ -11,11 +11,25 @@ namespace Api.Seed
     public class ProductSeed
     {
         public string Name { get; set; } = "";
-        public string Slug { get; set; } = "";
-        public string? Description { get; set; }
         public string Brand { get; set; } = "";
-        public int CategoryId { get; set; }
+        public string Gender { get; set; } = "";
 
-        public List<ProductVariant> Variants { get; set; } = new();
+        public int CategoryId { get; set; }
+        public int TypeId { get; set; }
+
+        public bool IsNew { get; set; }
+
+        public List<ProductVariantSeed> Variants { get; set; } = new();
+    }
+
+    public class ProductVariantSeed
+    {
+        public string Size { get; set; } = "";
+        public string Colour { get; set; } = "";
+
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
+
+        public string ImageUrl { get; set; } = "";
     }
 }

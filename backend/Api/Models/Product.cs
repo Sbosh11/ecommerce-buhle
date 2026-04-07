@@ -1,27 +1,22 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace Api.Models
+namespace Api.Dtos
 {
-    public class Product
+    public class ProductDto
     {
-        [Key]
         public int Id { get; set; }
 
-        [Required]
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = "";
+        public string Brand { get; set; } = "";
 
-        [Required]
-        public string Slug { get; set; } = string.Empty;
+        public string Gender { get; set; } = "";
 
-        public string? Description { get; set; }
+        public int CategoryId { get; set; } // Running
+        public int TypeId { get; set; }     // Shoes / Clothing
 
-        [Required]
-        public string Brand { get; set; } = string.Empty;
+        public bool IsNew { get; set; }
 
-        public int CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public decimal MinPrice { get; set; }
+        public decimal MaxPrice { get; set; }
 
-        public ICollection<ProductVariant> Variants { get; set; } = new List<ProductVariant>();
+        public List<ProductVariantDto> Variants { get; set; } = new();
     }
 }

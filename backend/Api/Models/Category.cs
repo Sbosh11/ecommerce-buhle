@@ -1,19 +1,14 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace Api.Models
+namespace Api.Dtos
 {
-    public class Category
+    public class CategoryDto
     {
-        [Key]
         public int Id { get; set; }
+        public string Name { get; set; } = "";
+        public string Slug { get; set; } = "";
 
-        [Required]
-        public string Name { get; set; } = string.Empty;
+        public string Type { get; set; } = "";   // Department, Activity, ProductType
+        public int? ParentId { get; set; }
 
-        [Required]
-        public string Slug { get; set; } = string.Empty;
-
-        public ICollection<Product> Products { get; set; } = new List<Product>();
+        public int ProductCount { get; set; }
     }
 }

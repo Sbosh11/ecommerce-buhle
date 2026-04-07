@@ -18,10 +18,10 @@ namespace Api.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Slug should be unique
             modelBuilder.Entity<Product>()
-                .HasIndex(p => p.Slug)
-                .IsUnique();
+                .HasMany(p => p.Variants)
+                .WithOne(v => v.Product!)
+                .HasForeignKey(v => v.ProductId);
 
             modelBuilder.Entity<Category>()
                 .HasIndex(c => c.Slug)

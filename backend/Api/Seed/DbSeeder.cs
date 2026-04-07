@@ -8,8 +8,6 @@ namespace Api.Seed
     {
         public static void Seed(AppDbContext context)
         {
-            //context.Database.EnsureCreated();
-
             if (context.Categories.Any() || context.Products.Any())
                 return;
 
@@ -24,18 +22,21 @@ namespace Api.Seed
 
             if (data == null) return;
 
+            // Categories
             context.Categories.AddRange(data.Categories);
             context.SaveChanges();
 
+            // Products
             foreach (var product in data.Products)
             {
                 var newProduct = new Product
                 {
                     Name = product.Name,
-                    Slug = product.Slug,
-                    Description = product.Description,
                     Brand = product.Brand,
+                    Gender = product.Gender,
                     CategoryId = product.CategoryId,
+                    TypeId = product.TypeId,
+                    IsNew = product.IsNew,
 
                     Variants = product.Variants.Select(v => new ProductVariant
                     {

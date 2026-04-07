@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
         private readonly AppDbContext _context;
@@ -17,125 +17,52 @@ namespace Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetProducts(
-            [FromQuery] int? categoryId,
-            [FromQuery] string? colour,
-            [FromQuery] string? size,
-            [FromQuery] string? search,
-            [FromQuery] string? sort,
-            [FromQuery] decimal? minPrice,
-            [FromQuery] decimal? maxPrice,
-            [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 10)
+        public async Task<ActionResult<List<ProductDto>>> GetProducts(
+            string? gender,
+            int? categoryId,
+            int? typeId)
         {
-            page = page < 1 ? 1 : page;
-            pageSize = pageSize > 50 ? 50 : pageSize;
-
             var query = _context.Products
                 .Include(p => p.Variants)
                 .AsQueryable();
 
+            // Filters
+            if (!string.IsNullOrEmpty(gender))
+                query = query.Where(p => p.Gender == gender);
+
             if (categoryId.HasValue)
-                query = query.Where(p => p.CategoryId == categoryId.Value);
+                query = query.Where(p => p.CategoryId == categoryId);
 
-            if (!string.IsNullOrEmpty(colour))
-                query = query.Where(p =>
-                    p.Variants.Any(v => v.Colour.ToLower() == colour.ToLower()));
-
-            if (!string.IsNullOrEmpty(size))
-                query = query.Where(p =>
-                    p.Variants.Any(v => v.Size.ToLower() == size.ToLower()));
-
-            if (minPrice.HasValue)
-                query = query.Where(p => p.Variants.Min(v => v.Price) >= minPrice.Value);
-
-            if (maxPrice.HasValue)
-                query = query.Where(p => p.Variants.Min(v => v.Price) <= maxPrice.Value);
-
-            if (!string.IsNullOrEmpty(search))
-                query = query.Where(p =>
-                    p.Name.ToLower().Contains(search.ToLower()) ||
-                    p.Brand.ToLower().Contains(search.ToLower()));
-
-            query = sort switch
-            {
-                "price_asc" => query.OrderBy(p => p.Variants.Min(v => v.Price)),
-                "price_desc" => query.OrderByDescending(p => p.Variants.Min(v => v.Price)),
-                "name" => query.OrderBy(p => p.Name),
-                _ => query.OrderBy(p => p.Id)
-            };
-
-            var totalCount = await query.CountAsync();
+            if (typeId.HasValue)
+                query = query.Where(p => p.TypeId == typeId);
 
             var products = await query
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
+                .Select(p => new ProductDto
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    Brand = p.Brand,
+                    Gender = p.Gender,
+                    CategoryId = p.CategoryId,
+                    TypeId = p.TypeId,
+                    IsNew = p.IsNew,
+
+                    MinPrice = p.Variants.Min(v => v.Price),
+                    MaxPrice = p.Variants.Max(v => v.Price),
+
+                    Variants = p.Variants.Select(v => new ProductVariantDto
+                    {
+                        Id = v.Id,
+                        Size = v.Size,
+                        Colour = v.Colour,
+                        Price = v.Price,
+                        Stock = v.Stock,
+                        ImageUrl = v.ImageUrl
+                    }).ToList()
+                })
                 .ToListAsync();
 
-            var result = products.Select(p => new ProductDto
-            {
-                Id = p.Id,
-                Name = p.Name,
-                Slug = p.Slug,
-                Description = p.Description,
-                Price = p.Variants.Min(v => v.Price),
-                Brand = p.Brand,
-                CategoryId = p.CategoryId,
-
-                Variants = p.Variants.Select(v => new ProductVariantDto
-                {
-                    Id = v.Id,
-                    Size = v.Size,
-                    Colour = v.Colour,
-                    Price = v.Price,
-                    Stock = v.Stock,
-                    ImageUrl = v.ImageUrl
-                }).ToList()
-            }).ToList();
-
-            var totalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
-
-            return Ok(new
-            {
-                totalCount,
-                page,
-                pageSize,
-                totalPages,
-                data = result
-            });
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<ProductDto>> GetProduct(int id)
-        {
-            var product = await _context.Products
-                .Include(p => p.Variants)
-                .FirstOrDefaultAsync(p => p.Id == id);
-
-            if (product == null) return NotFound();
-
-            var result = new ProductDto
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Slug = product.Slug,
-                Description = product.Description,
-                Price = product.Variants.Min(v => v.Price),
-                Brand = product.Brand,
-                CategoryId = product.CategoryId,
-
-                Variants = product.Variants.Select(v => new ProductVariantDto
-                {
-                    Id = v.Id,
-                    Size = v.Size,
-                    Colour = v.Colour,
-                    Price = v.Price,
-                    Stock = v.Stock,
-                    ImageUrl = v.ImageUrl
-                }).ToList()
-            };
-
-            return Ok(result);
+            return Ok(products);
         }
     }
 }
