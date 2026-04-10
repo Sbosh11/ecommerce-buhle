@@ -27,8 +27,6 @@ namespace Api.Controllers
                     Slug = c.Slug,
                     Type = c.Type,
                     ParentId = c.ParentId,
-
-                    // Count products linked to this category
                     ProductCount = _context.Products.Count(p => p.CategoryId == c.Id)
                 })
                 .ToListAsync();

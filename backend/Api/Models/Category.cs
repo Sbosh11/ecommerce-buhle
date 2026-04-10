@@ -1,14 +1,17 @@
-namespace Api.Dtos
+namespace Api.Models
 {
-    public class CategoryDto
+    public class Category
     {
         public int Id { get; set; }
+
         public string Name { get; set; } = "";
         public string Slug { get; set; } = "";
+        public string Type { get; set; } = "";
 
-        public string Type { get; set; } = "";   // Department, Activity, ProductType
         public int? ParentId { get; set; }
+        public Category? Parent { get; set; }
 
-        public int ProductCount { get; set; }
+        public ICollection<Category> Children { get; set; } = new List<Category>();
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

@@ -10,7 +10,12 @@ namespace Api.Seed
 
     public class ProductSeed
     {
+        public int Id { get; set; }
+
         public string Name { get; set; } = "";
+        public string Slug { get; set; } = "";
+        public string? Description { get; set; }
+
         public string Brand { get; set; } = "";
         public string Gender { get; set; } = "";
 
@@ -24,6 +29,8 @@ namespace Api.Seed
 
     public class ProductVariantSeed
     {
+        public int Id { get; set; }
+
         public string Size { get; set; } = "";
         public string Colour { get; set; } = "";
 

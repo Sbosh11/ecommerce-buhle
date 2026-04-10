@@ -26,30 +26,28 @@ namespace Api.Controllers
                 .Include(p => p.Variants)
                 .AsQueryable();
 
-            // Filters
-            if (!string.IsNullOrEmpty(gender))
+            if (!string.IsNullOrWhiteSpace(gender))
                 query = query.Where(p => p.Gender == gender);
 
             if (categoryId.HasValue)
-                query = query.Where(p => p.CategoryId == categoryId);
+                query = query.Where(p => p.CategoryId == categoryId.Value);
 
             if (typeId.HasValue)
-                query = query.Where(p => p.TypeId == typeId);
+                query = query.Where(p => p.TypeId == typeId.Value);
 
             var products = await query
                 .Select(p => new ProductDto
                 {
                     Id = p.Id,
                     Name = p.Name,
+                    Slug = p.Slug,
+                    Description = p.Description,
+                    Price = p.Variants
+                        .OrderBy(v => v.Price)
+                        .Select(v => v.Price)
+                        .FirstOrDefault(),
                     Brand = p.Brand,
-                    Gender = p.Gender,
                     CategoryId = p.CategoryId,
-                    TypeId = p.TypeId,
-                    IsNew = p.IsNew,
-
-                    MinPrice = p.Variants.Min(v => v.Price),
-                    MaxPrice = p.Variants.Max(v => v.Price),
-
                     Variants = p.Variants.Select(v => new ProductVariantDto
                     {
                         Id = v.Id,
