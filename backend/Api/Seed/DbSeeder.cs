@@ -31,11 +31,15 @@ namespace Api.Seed
                 var variants = product.Variants.Select(v => new ProductVariant
                 {
                     Id = v.Id,
-                    Size = v.Size,
                     Colour = v.Colour,
-                    Price = v.Price,
-                    Stock = v.Stock,
-                    ImageUrl = v.ImageUrl
+                    ImageUrl = v.ImageUrl,
+                    Sizes = v.Sizes.Select(s => new ProductSize
+                    {
+                        Id = s.Id,
+                        Size = s.Size,
+                        Price = s.Price,
+                        Stock = s.Stock
+                    }).ToList()
                 }).ToList();
 
                 var newProduct = new Product

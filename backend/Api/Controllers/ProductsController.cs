@@ -24,6 +24,7 @@ namespace Api.Controllers
         {
             var query = _context.Products
                 .Include(p => p.Variants)
+                .ThenInclude(v => v.Sizes)
                 .AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(gender))
@@ -42,20 +43,31 @@ namespace Api.Controllers
                     Name = p.Name,
                     Slug = p.Slug,
                     Description = p.Description,
-                    Price = p.Variants
-                        .OrderBy(v => v.Price)
-                        .Select(v => v.Price)
-                        .FirstOrDefault(),
                     Brand = p.Brand,
+                    Gender = p.Gender,
                     CategoryId = p.CategoryId,
+                    TypeId = p.TypeId,
+                    IsNew = p.IsNew,
+                    Price = p.Variants
+                        .SelectMany(v => v.Sizes)
+                        .OrderBy(s => s.Price)
+                        .Select(s => s.Price)
+                        .FirstOrDefault(),
                     Variants = p.Variants.Select(v => new ProductVariantDto
                     {
                         Id = v.Id,
-                        Size = v.Size,
                         Colour = v.Colour,
-                        Price = v.Price,
-                        Stock = v.Stock,
-                        ImageUrl = v.ImageUrl
+                        ImageUrl = v.ImageUrl,
+                        Sizes = v.Sizes
+                            .OrderBy(s => s.Size)
+                            .Select(s => new ProductSizeDto
+                            {
+                                Id = s.Id,
+                                Size = s.Size,
+                                Price = s.Price,
+                                Stock = s.Stock
+                            })
+                            .ToList()
                     }).ToList()
                 })
                 .ToListAsync();

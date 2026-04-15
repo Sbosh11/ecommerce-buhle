@@ -4,13 +4,12 @@ namespace Api.Models
     {
         public int Id { get; set; }
 
-        public string Size { get; set; } = "";
         public string Colour { get; set; } = "";
-        public decimal Price { get; set; }
-        public int Stock { get; set; }
         public string ImageUrl { get; set; } = "";
 
         public int ProductId { get; set; }
         public Product? Product { get; set; }
+
+        public ICollection<ProductSize> Sizes { get; set; } = new List<ProductSize>();
     }
 }

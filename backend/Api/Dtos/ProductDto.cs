@@ -8,11 +8,14 @@ namespace Api.Dtos
         public string Slug { get; set; } = "";
         public string? Description { get; set; }
 
-        public decimal Price { get; set; } // derived from variants
-
+        public decimal Price { get; set; } // lowest price across all sizes
         public string Brand { get; set; } = "";
+        public string Gender { get; set; } = "";
 
         public int CategoryId { get; set; }
+        public int TypeId { get; set; }
+
+        public bool IsNew { get; set; }
 
         public List<ProductVariantDto> Variants { get; set; } = new();
     }

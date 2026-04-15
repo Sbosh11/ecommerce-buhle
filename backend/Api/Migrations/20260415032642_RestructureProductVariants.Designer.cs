@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260410034349_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260415032642_RestructureProductVariants")]
+    partial class RestructureProductVariants
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,9 +43,6 @@ namespace Api.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ParentId");
-
-                    b.HasIndex("Slug")
-                        .IsUnique();
 
                     b.ToTable("Categories");
                 });
@@ -93,6 +90,32 @@ namespace Api.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Api.Models.ProductSize", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ProductVariantId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Size")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductVariantId");
+
+                    b.ToTable("ProductSizes");
+                });
+
             modelBuilder.Entity("Api.Models.ProductVariant", b =>
                 {
                     b.Property<int>("Id")
@@ -107,17 +130,7 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("ProductId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Size")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Stock")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -156,6 +169,17 @@ namespace Api.Migrations
                     b.Navigation("Type");
                 });
 
+            modelBuilder.Entity("Api.Models.ProductSize", b =>
+                {
+                    b.HasOne("Api.Models.ProductVariant", "ProductVariant")
+                        .WithMany("Sizes")
+                        .HasForeignKey("ProductVariantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductVariant");
+                });
+
             modelBuilder.Entity("Api.Models.ProductVariant", b =>
                 {
                     b.HasOne("Api.Models.Product", "Product")
@@ -177,6 +201,11 @@ namespace Api.Migrations
             modelBuilder.Entity("Api.Models.Product", b =>
                 {
                     b.Navigation("Variants");
+                });
+
+            modelBuilder.Entity("Api.Models.ProductVariant", b =>
+                {
+                    b.Navigation("Sizes");
                 });
 #pragma warning restore 612, 618
         }

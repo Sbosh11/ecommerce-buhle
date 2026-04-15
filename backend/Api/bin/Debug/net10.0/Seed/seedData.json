@@ -1,6 +1,11 @@
 {
   "categories": [
-    { "id": 1, "name": "Sport", "slug": "sport", "type": "Department" },
+    {
+      "id": 1,
+      "name": "Sport",
+      "slug": "sport",
+      "type": "Department"
+    },
     {
       "id": 2,
       "name": "Running",
@@ -8,8 +13,18 @@
       "type": "Activity",
       "parentId": 1
     },
-    { "id": 3, "name": "Shoes", "slug": "shoes", "type": "ProductType" },
-    { "id": 4, "name": "Clothing", "slug": "clothing", "type": "ProductType" }
+    {
+      "id": 3,
+      "name": "Shoes",
+      "slug": "shoes",
+      "type": "ProductType"
+    },
+    {
+      "id": 4,
+      "name": "Clothing",
+      "slug": "clothing",
+      "type": "ProductType"
+    }
   ],
   "products": [
     {
@@ -23,27 +38,35 @@
       "variants": [
         {
           "id": 1,
-          "size": "7",
           "colour": "Black",
-          "price": 2600,
-          "stock": 10,
-          "imageUrl": "/images/pegasus-black.jpg"
-        },
-        {
-          "id": 2,
-          "size": "8",
-          "colour": "Black",
-          "price": 2620,
-          "stock": 8,
-          "imageUrl": "/images/pegasus-black.jpg"
+          "imageUrl": "/images/pegasus-black.jpg",
+          "sizes": [
+            {
+              "id": 1,
+              "size": "7",
+              "price": 2600,
+              "stock": 10
+            },
+            {
+              "id": 2,
+              "size": "8",
+              "price": 2620,
+              "stock": 8
+            }
+          ]
         },
         {
           "id": 3,
-          "size": "9",
           "colour": "White",
-          "price": 2650,
-          "stock": 6,
-          "imageUrl": "/images/pegasus-white.jpg"
+          "imageUrl": "/images/pegasus-white.jpg",
+          "sizes": [
+            {
+              "id": 3,
+              "size": "9",
+              "price": 2650,
+              "stock": 6
+            }
+          ]
         }
       ]
     },
@@ -58,19 +81,22 @@
       "variants": [
         {
           "id": 4,
-          "size": "8",
           "colour": "Blue",
-          "price": 2550,
-          "stock": 9,
-          "imageUrl": "/images/zoomfly-blue.jpg"
-        },
-        {
-          "id": 5,
-          "size": "9",
-          "colour": "Blue",
-          "price": 2570,
-          "stock": 7,
-          "imageUrl": "/images/zoomfly-blue.jpg"
+          "imageUrl": "/images/zoomfly-blue.jpg",
+          "sizes": [
+            {
+              "id": 4,
+              "size": "8",
+              "price": 2550,
+              "stock": 9
+            },
+            {
+              "id": 5,
+              "size": "9",
+              "price": 2570,
+              "stock": 7
+            }
+          ]
         }
       ]
     },
@@ -85,19 +111,22 @@
       "variants": [
         {
           "id": 6,
-          "size": "5",
           "colour": "Pink",
-          "price": 1800,
-          "stock": 10,
-          "imageUrl": "/images/revolution-pink.jpg"
-        },
-        {
-          "id": 7,
-          "size": "6",
-          "colour": "Pink",
-          "price": 1820,
-          "stock": 8,
-          "imageUrl": "/images/revolution-pink.jpg"
+          "imageUrl": "/images/revolution-pink.jpg",
+          "sizes": [
+            {
+              "id": 6,
+              "size": "5",
+              "price": 1800,
+              "stock": 10
+            },
+            {
+              "id": 7,
+              "size": "6",
+              "price": 1820,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -112,19 +141,22 @@
       "variants": [
         {
           "id": 8,
-          "size": "6",
           "colour": "Grey",
-          "price": 1700,
-          "stock": 9,
-          "imageUrl": "/images/downshifter-grey.jpg"
-        },
-        {
-          "id": 9,
-          "size": "7",
-          "colour": "Grey",
-          "price": 1720,
-          "stock": 7,
-          "imageUrl": "/images/downshifter-grey.jpg"
+          "imageUrl": "/images/downshifter-grey.jpg",
+          "sizes": [
+            {
+              "id": 8,
+              "size": "6",
+              "price": 1700,
+              "stock": 9
+            },
+            {
+              "id": 9,
+              "size": "7",
+              "price": 1720,
+              "stock": 7
+            }
+          ]
         }
       ]
     },
@@ -139,23 +171,32 @@
       "variants": [
         {
           "id": 10,
-          "size": "3",
           "colour": "Red",
-          "price": 1400,
-          "stock": 10,
-          "imageUrl": "/images/kids-runner-red.jpg"
+          "imageUrl": "/images/kids-runner-red.jpg",
+          "sizes": [
+            {
+              "id": 10,
+              "size": "3",
+              "price": 1400,
+              "stock": 10
+            }
+          ]
         },
         {
           "id": 11,
-          "size": "4",
           "colour": "Blue",
-          "price": 1420,
-          "stock": 8,
-          "imageUrl": "/images/kids-runner-blue.jpg"
+          "imageUrl": "/images/kids-runner-blue.jpg",
+          "sizes": [
+            {
+              "id": 11,
+              "size": "4",
+              "price": 1420,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 106,
       "name": "Nike Miler Running Top",
@@ -167,19 +208,22 @@
       "variants": [
         {
           "id": 12,
-          "size": "M",
           "colour": "Black",
-          "price": 650,
-          "stock": 12,
-          "imageUrl": "/images/miler-black.jpg"
-        },
-        {
-          "id": 13,
-          "size": "L",
-          "colour": "Black",
-          "price": 670,
-          "stock": 10,
-          "imageUrl": "/images/miler-black.jpg"
+          "imageUrl": "/images/miler-black.jpg",
+          "sizes": [
+            {
+              "id": 12,
+              "size": "M",
+              "price": 650,
+              "stock": 12
+            },
+            {
+              "id": 13,
+              "size": "L",
+              "price": 670,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
@@ -194,19 +238,22 @@
       "variants": [
         {
           "id": 14,
-          "size": "S",
           "colour": "White",
-          "price": 600,
-          "stock": 12,
-          "imageUrl": "/images/drifit-white.jpg"
-        },
-        {
-          "id": 15,
-          "size": "M",
-          "colour": "White",
-          "price": 620,
-          "stock": 9,
-          "imageUrl": "/images/drifit-white.jpg"
+          "imageUrl": "/images/drifit-white.jpg",
+          "sizes": [
+            {
+              "id": 14,
+              "size": "S",
+              "price": 600,
+              "stock": 12
+            },
+            {
+              "id": 15,
+              "size": "M",
+              "price": 620,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
@@ -221,19 +268,22 @@
       "variants": [
         {
           "id": 16,
-          "size": "M",
           "colour": "Grey",
-          "price": 700,
-          "stock": 10,
-          "imageUrl": "/images/shorts-grey.jpg"
-        },
-        {
-          "id": 17,
-          "size": "L",
-          "colour": "Grey",
-          "price": 720,
-          "stock": 8,
-          "imageUrl": "/images/shorts-grey.jpg"
+          "imageUrl": "/images/shorts-grey.jpg",
+          "sizes": [
+            {
+              "id": 16,
+              "size": "M",
+              "price": 700,
+              "stock": 10
+            },
+            {
+              "id": 17,
+              "size": "L",
+              "price": 720,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -248,19 +298,22 @@
       "variants": [
         {
           "id": 18,
-          "size": "S",
           "colour": "Black",
-          "price": 800,
-          "stock": 10,
-          "imageUrl": "/images/leggings-black.jpg"
-        },
-        {
-          "id": 19,
-          "size": "M",
-          "colour": "Black",
-          "price": 820,
-          "stock": 8,
-          "imageUrl": "/images/leggings-black.jpg"
+          "imageUrl": "/images/leggings-black.jpg",
+          "sizes": [
+            {
+              "id": 18,
+              "size": "S",
+              "price": 800,
+              "stock": 10
+            },
+            {
+              "id": 19,
+              "size": "M",
+              "price": 820,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -275,23 +328,25 @@
       "variants": [
         {
           "id": 20,
-          "size": "S",
           "colour": "Blue",
-          "price": 500,
-          "stock": 12,
-          "imageUrl": "/images/kids-tee-blue.jpg"
-        },
-        {
-          "id": 21,
-          "size": "M",
-          "colour": "Blue",
-          "price": 520,
-          "stock": 9,
-          "imageUrl": "/images/kids-tee-blue.jpg"
+          "imageUrl": "/images/kids-tee-blue.jpg",
+          "sizes": [
+            {
+              "id": 20,
+              "size": "S",
+              "price": 500,
+              "stock": 12
+            },
+            {
+              "id": 21,
+              "size": "M",
+              "price": 520,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 111,
       "name": "Nike Air Max Alpha",
@@ -303,19 +358,22 @@
       "variants": [
         {
           "id": 22,
-          "size": "8",
           "colour": "Black",
-          "price": 2000,
-          "stock": 10,
-          "imageUrl": "/images/alpha-black.jpg"
-        },
-        {
-          "id": 23,
-          "size": "9",
-          "colour": "Black",
-          "price": 2020,
-          "stock": 8,
-          "imageUrl": "/images/alpha-black.jpg"
+          "imageUrl": "/images/alpha-black.jpg",
+          "sizes": [
+            {
+              "id": 22,
+              "size": "8",
+              "price": 2000,
+              "stock": 10
+            },
+            {
+              "id": 23,
+              "size": "9",
+              "price": 2020,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -330,19 +388,22 @@
       "variants": [
         {
           "id": 24,
-          "size": "6",
           "colour": "White",
-          "price": 1900,
-          "stock": 10,
-          "imageUrl": "/images/court-white.jpg"
-        },
-        {
-          "id": 25,
-          "size": "7",
-          "colour": "White",
-          "price": 1920,
-          "stock": 8,
-          "imageUrl": "/images/court-white.jpg"
+          "imageUrl": "/images/court-white.jpg",
+          "sizes": [
+            {
+              "id": 24,
+              "size": "6",
+              "price": 1900,
+              "stock": 10
+            },
+            {
+              "id": 25,
+              "size": "7",
+              "price": 1920,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -357,15 +418,19 @@
       "variants": [
         {
           "id": 26,
-          "size": "3",
           "colour": "Black",
-          "price": 1300,
-          "stock": 10,
-          "imageUrl": "/images/kids-trainers.jpg"
+          "imageUrl": "/images/kids-trainers.jpg",
+          "sizes": [
+            {
+              "id": 26,
+              "size": "3",
+              "price": 1300,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 114,
       "name": "Nike Club Hoodie",
@@ -377,19 +442,22 @@
       "variants": [
         {
           "id": 27,
-          "size": "M",
           "colour": "Grey",
-          "price": 900,
-          "stock": 10,
-          "imageUrl": "/images/hoodie-grey.jpg"
-        },
-        {
-          "id": 28,
-          "size": "L",
-          "colour": "Grey",
-          "price": 920,
-          "stock": 8,
-          "imageUrl": "/images/hoodie-grey.jpg"
+          "imageUrl": "/images/hoodie-grey.jpg",
+          "sizes": [
+            {
+              "id": 27,
+              "size": "M",
+              "price": 900,
+              "stock": 10
+            },
+            {
+              "id": 28,
+              "size": "L",
+              "price": 920,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -404,19 +472,22 @@
       "variants": [
         {
           "id": 29,
-          "size": "S",
           "colour": "Black",
-          "price": 550,
-          "stock": 10,
-          "imageUrl": "/images/tee-black.jpg"
-        },
-        {
-          "id": 30,
-          "size": "M",
-          "colour": "Black",
-          "price": 570,
-          "stock": 8,
-          "imageUrl": "/images/tee-black.jpg"
+          "imageUrl": "/images/tee-black.jpg",
+          "sizes": [
+            {
+              "id": 29,
+              "size": "S",
+              "price": 550,
+              "stock": 10
+            },
+            {
+              "id": 30,
+              "size": "M",
+              "price": 570,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -431,15 +502,19 @@
       "variants": [
         {
           "id": 31,
-          "size": "S",
           "colour": "Red",
-          "price": 700,
-          "stock": 10,
-          "imageUrl": "/images/kids-hoodie.jpg"
+          "imageUrl": "/images/kids-hoodie.jpg",
+          "sizes": [
+            {
+              "id": 31,
+              "size": "S",
+              "price": 700,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 117,
       "name": "Nike Flex Runner",
@@ -451,11 +526,16 @@
       "variants": [
         {
           "id": 32,
-          "size": "8",
           "colour": "Green",
-          "price": 2100,
-          "stock": 9,
-          "imageUrl": "/images/flex-green.jpg"
+          "imageUrl": "/images/flex-green.jpg",
+          "sizes": [
+            {
+              "id": 32,
+              "size": "8",
+              "price": 2100,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
@@ -470,11 +550,16 @@
       "variants": [
         {
           "id": 33,
-          "size": "6",
           "colour": "Purple",
-          "price": 2300,
-          "stock": 9,
-          "imageUrl": "/images/zoom-purple.jpg"
+          "imageUrl": "/images/zoom-purple.jpg",
+          "sizes": [
+            {
+              "id": 33,
+              "size": "6",
+              "price": 2300,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
@@ -489,11 +574,16 @@
       "variants": [
         {
           "id": 34,
-          "size": "M",
           "colour": "Black",
-          "price": 800,
-          "stock": 10,
-          "imageUrl": "/images/trackpants.jpg"
+          "imageUrl": "/images/trackpants.jpg",
+          "sizes": [
+            {
+              "id": 34,
+              "size": "M",
+              "price": 800,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
@@ -508,11 +598,16 @@
       "variants": [
         {
           "id": 35,
-          "size": "S",
           "colour": "Pink",
-          "price": 600,
-          "stock": 10,
-          "imageUrl": "/images/bra.jpg"
+          "imageUrl": "/images/bra.jpg",
+          "sizes": [
+            {
+              "id": 35,
+              "size": "S",
+              "price": 600,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
@@ -527,11 +622,16 @@
       "variants": [
         {
           "id": 36,
-          "size": "S",
           "colour": "Blue",
-          "price": 450,
-          "stock": 10,
-          "imageUrl": "/images/kids-shorts.jpg"
+          "imageUrl": "/images/kids-shorts.jpg",
+          "sizes": [
+            {
+              "id": 36,
+              "size": "S",
+              "price": 450,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
@@ -546,19 +646,22 @@
       "variants": [
         {
           "id": 37,
-          "size": "8",
           "colour": "Black",
-          "price": 2400,
-          "stock": 9,
-          "imageUrl": "/images/winflo-black.jpg"
-        },
-        {
-          "id": 38,
-          "size": "9",
-          "colour": "Black",
-          "price": 2420,
-          "stock": 7,
-          "imageUrl": "/images/winflo-black.jpg"
+          "imageUrl": "/images/winflo-black.jpg",
+          "sizes": [
+            {
+              "id": 37,
+              "size": "8",
+              "price": 2400,
+              "stock": 9
+            },
+            {
+              "id": 38,
+              "size": "9",
+              "price": 2420,
+              "stock": 7
+            }
+          ]
         }
       ]
     },
@@ -573,19 +676,22 @@
       "variants": [
         {
           "id": 39,
-          "size": "S",
           "colour": "Grey",
-          "price": 780,
-          "stock": 10,
-          "imageUrl": "/images/one-leggings-grey.jpg"
-        },
-        {
-          "id": 40,
-          "size": "M",
-          "colour": "Grey",
-          "price": 800,
-          "stock": 8,
-          "imageUrl": "/images/one-leggings-grey.jpg"
+          "imageUrl": "/images/one-leggings-grey.jpg",
+          "sizes": [
+            {
+              "id": 39,
+              "size": "S",
+              "price": 780,
+              "stock": 10
+            },
+            {
+              "id": 40,
+              "size": "M",
+              "price": 800,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -600,19 +706,22 @@
       "variants": [
         {
           "id": 41,
-          "size": "2",
           "colour": "Blue",
-          "price": 1300,
-          "stock": 10,
-          "imageUrl": "/images/star-runner-blue.jpg"
-        },
-        {
-          "id": 42,
-          "size": "3",
-          "colour": "Blue",
-          "price": 1320,
-          "stock": 8,
-          "imageUrl": "/images/star-runner-blue.jpg"
+          "imageUrl": "/images/star-runner-blue.jpg",
+          "sizes": [
+            {
+              "id": 41,
+              "size": "2",
+              "price": 1300,
+              "stock": 10
+            },
+            {
+              "id": 42,
+              "size": "3",
+              "price": 1320,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
@@ -627,19 +736,22 @@
       "variants": [
         {
           "id": 43,
-          "size": "M",
           "colour": "Black",
-          "price": 850,
-          "stock": 10,
-          "imageUrl": "/images/joggers-black.jpg"
-        },
-        {
-          "id": 44,
-          "size": "L",
-          "colour": "Black",
-          "price": 870,
-          "stock": 8,
-          "imageUrl": "/images/joggers-black.jpg"
+          "imageUrl": "/images/joggers-black.jpg",
+          "sizes": [
+            {
+              "id": 43,
+              "size": "M",
+              "price": 850,
+              "stock": 10
+            },
+            {
+              "id": 44,
+              "size": "L",
+              "price": 870,
+              "stock": 8
+            }
+          ]
         }
       ]
     }

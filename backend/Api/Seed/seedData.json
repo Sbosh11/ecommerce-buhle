@@ -1,6 +1,11 @@
 {
   "categories": [
-    { "id": 1, "name": "Sport", "slug": "sport", "type": "Department" },
+    {
+      "id": 1,
+      "name": "Sport",
+      "slug": "sport",
+      "type": "Department"
+    },
     {
       "id": 2,
       "name": "Running",
@@ -8,13 +13,26 @@
       "type": "Activity",
       "parentId": 1
     },
-    { "id": 3, "name": "Shoes", "slug": "shoes", "type": "ProductType" },
-    { "id": 4, "name": "Clothing", "slug": "clothing", "type": "ProductType" }
+    {
+      "id": 3,
+      "name": "Shoes",
+      "slug": "shoes",
+      "type": "ProductType"
+    },
+    {
+      "id": 4,
+      "name": "Clothing",
+      "slug": "clothing",
+      "type": "ProductType"
+    }
   ],
   "products": [
     {
       "id": 101,
       "name": "Nike Pegasus 42",
+      "slug": "nike-pegasus-42",
+      "description": "Responsive everyday running shoes built for regular training with smooth cushioning and reliable comfort.",
+      "thumbnailUrl": "/images/pegasus-black.jpg",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -23,33 +41,63 @@
       "variants": [
         {
           "id": 1,
-          "size": "7",
           "colour": "Black",
-          "price": 2600,
-          "stock": 10,
-          "imageUrl": "/images/pegasus-black.jpg"
+          "imageUrl": "/images/pegasus-black.jpg",
+          "sizes": [
+            {
+              "id": 1,
+              "size": "7",
+              "price": 2600,
+              "stock": 10
+            },
+            {
+              "id": 2,
+              "size": "8",
+              "price": 2620,
+              "stock": 8
+            }
+          ]
         },
         {
           "id": 2,
-          "size": "8",
-          "colour": "Black",
-          "price": 2620,
-          "stock": 8,
-          "imageUrl": "/images/pegasus-black.jpg"
+          "colour": "White",
+          "imageUrl": "/images/pegasus-white.jpg",
+          "sizes": [
+            {
+              "id": 3,
+              "size": "9",
+              "price": 2650,
+              "stock": 6
+            }
+          ]
         },
         {
           "id": 3,
-          "size": "9",
-          "colour": "White",
-          "price": 2650,
-          "stock": 6,
-          "imageUrl": "/images/pegasus-white.jpg"
+          "colour": "Blue",
+          "imageUrl": "/images/nike-pegasus-42-blue.jpg",
+          "sizes": [
+            {
+              "id": 4,
+              "size": "7",
+              "price": 2600,
+              "stock": 10
+            },
+            {
+              "id": 5,
+              "size": "8",
+              "price": 2620,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 102,
       "name": "Nike Zoom Fly",
+      "slug": "nike-zoom-fly",
+      "description": "Lightweight running shoes designed for faster training days and steady road mileage.",
+      "thumbnailUrl": "/images/zoomfly-blue.jpg",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -58,25 +106,69 @@
       "variants": [
         {
           "id": 4,
-          "size": "8",
           "colour": "Blue",
-          "price": 2550,
-          "stock": 9,
-          "imageUrl": "/images/zoomfly-blue.jpg"
+          "imageUrl": "/images/zoomfly-blue.jpg",
+          "sizes": [
+            {
+              "id": 6,
+              "size": "8",
+              "price": 2550,
+              "stock": 9
+            },
+            {
+              "id": 7,
+              "size": "9",
+              "price": 2570,
+              "stock": 7
+            }
+          ]
         },
         {
           "id": 5,
-          "size": "9",
-          "colour": "Blue",
-          "price": 2570,
-          "stock": 7,
-          "imageUrl": "/images/zoomfly-blue.jpg"
+          "colour": "Black",
+          "imageUrl": "/images/nike-zoom-fly-black.jpg",
+          "sizes": [
+            {
+              "id": 8,
+              "size": "8",
+              "price": 2550,
+              "stock": 9
+            },
+            {
+              "id": 9,
+              "size": "9",
+              "price": 2570,
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "colour": "White",
+          "imageUrl": "/images/nike-zoom-fly-white.jpg",
+          "sizes": [
+            {
+              "id": 10,
+              "size": "8",
+              "price": 2550,
+              "stock": 9
+            },
+            {
+              "id": 11,
+              "size": "9",
+              "price": 2570,
+              "stock": 7
+            }
+          ]
         }
       ]
     },
     {
       "id": 103,
       "name": "Nike Revolution 6",
+      "slug": "nike-revolution-6",
+      "description": "Soft cushioned running shoes built for everyday comfort and easy-paced workouts.",
+      "thumbnailUrl": "/images/revolution-pink.jpg",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -84,26 +176,51 @@
       "isNew": true,
       "variants": [
         {
-          "id": 6,
-          "size": "5",
+          "id": 7,
           "colour": "Pink",
-          "price": 1800,
-          "stock": 10,
-          "imageUrl": "/images/revolution-pink.jpg"
+          "imageUrl": "/images/revolution-pink.jpg",
+          "sizes": [
+            {
+              "id": 12,
+              "size": "5",
+              "price": 1800,
+              "stock": 10
+            },
+            {
+              "id": 13,
+              "size": "6",
+              "price": 1820,
+              "stock": 8
+            }
+          ]
         },
         {
-          "id": 7,
-          "size": "6",
-          "colour": "Pink",
-          "price": 1820,
-          "stock": 8,
-          "imageUrl": "/images/revolution-pink.jpg"
+          "id": 8,
+          "colour": "Black",
+          "imageUrl": "/images/nike-revolution-6-black.jpg",
+          "sizes": [
+            {
+              "id": 14,
+              "size": "5",
+              "price": 1800,
+              "stock": 10
+            },
+            {
+              "id": 15,
+              "size": "6",
+              "price": 1820,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 104,
       "name": "Nike Downshifter",
+      "slug": "nike-downshifter",
+      "description": "Versatile running shoes with a supportive fit for daily exercise and casual wear.",
+      "thumbnailUrl": "/images/downshifter-grey.jpg",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -111,26 +228,51 @@
       "isNew": false,
       "variants": [
         {
-          "id": 8,
-          "size": "6",
+          "id": 9,
           "colour": "Grey",
-          "price": 1700,
-          "stock": 9,
-          "imageUrl": "/images/downshifter-grey.jpg"
+          "imageUrl": "/images/downshifter-grey.jpg",
+          "sizes": [
+            {
+              "id": 16,
+              "size": "6",
+              "price": 1700,
+              "stock": 9
+            },
+            {
+              "id": 17,
+              "size": "7",
+              "price": 1720,
+              "stock": 7
+            }
+          ]
         },
         {
-          "id": 9,
-          "size": "7",
-          "colour": "Grey",
-          "price": 1720,
-          "stock": 7,
-          "imageUrl": "/images/downshifter-grey.jpg"
+          "id": 10,
+          "colour": "Black",
+          "imageUrl": "/images/nike-downshifter-black.jpg",
+          "sizes": [
+            {
+              "id": 18,
+              "size": "6",
+              "price": 1700,
+              "stock": 9
+            },
+            {
+              "id": 19,
+              "size": "7",
+              "price": 1720,
+              "stock": 7
+            }
+          ]
         }
       ]
     },
     {
       "id": 105,
       "name": "Nike Kids Runner",
+      "slug": "nike-kids-runner",
+      "description": "Comfortable kids' running shoes made for school, play, and everyday movement.",
+      "thumbnailUrl": "/images/kids-runner-red.jpg",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 2,
@@ -138,27 +280,39 @@
       "isNew": true,
       "variants": [
         {
-          "id": 10,
-          "size": "3",
+          "id": 11,
           "colour": "Red",
-          "price": 1400,
-          "stock": 10,
-          "imageUrl": "/images/kids-runner-red.jpg"
+          "imageUrl": "/images/kids-runner-red.jpg",
+          "sizes": [
+            {
+              "id": 20,
+              "size": "3",
+              "price": 1400,
+              "stock": 10
+            }
+          ]
         },
         {
-          "id": 11,
-          "size": "4",
+          "id": 12,
           "colour": "Blue",
-          "price": 1420,
-          "stock": 8,
-          "imageUrl": "/images/kids-runner-blue.jpg"
+          "imageUrl": "/images/kids-runner-blue.jpg",
+          "sizes": [
+            {
+              "id": 21,
+              "size": "4",
+              "price": 1420,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 106,
       "name": "Nike Miler Running Top",
+      "slug": "nike-miler-running-top",
+      "description": "Breathable running top built to keep you cool during training sessions.",
+      "thumbnailUrl": "/images/miler-black.jpg",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -166,26 +320,70 @@
       "isNew": true,
       "variants": [
         {
-          "id": 12,
-          "size": "M",
+          "id": 13,
           "colour": "Black",
-          "price": 650,
-          "stock": 12,
-          "imageUrl": "/images/miler-black.jpg"
+          "imageUrl": "/images/miler-black.jpg",
+          "sizes": [
+            {
+              "id": 22,
+              "size": "M",
+              "price": 650,
+              "stock": 12
+            },
+            {
+              "id": 23,
+              "size": "L",
+              "price": 670,
+              "stock": 10
+            }
+          ]
         },
         {
-          "id": 13,
-          "size": "L",
-          "colour": "Black",
-          "price": 670,
-          "stock": 10,
-          "imageUrl": "/images/miler-black.jpg"
+          "id": 14,
+          "colour": "Grey",
+          "imageUrl": "/images/nike-miler-running-top-grey.jpg",
+          "sizes": [
+            {
+              "id": 24,
+              "size": "M",
+              "price": 650,
+              "stock": 12
+            },
+            {
+              "id": 25,
+              "size": "L",
+              "price": 670,
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "colour": "White",
+          "imageUrl": "/images/nike-miler-running-top-white.jpg",
+          "sizes": [
+            {
+              "id": 26,
+              "size": "M",
+              "price": 650,
+              "stock": 12
+            },
+            {
+              "id": 27,
+              "size": "L",
+              "price": 670,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
     {
       "id": 107,
       "name": "Nike Dri-FIT Tee",
+      "slug": "nike-dri-fit-tee",
+      "description": "Lightweight Dri-FIT training tee with a soft feel for everyday workouts.",
+      "thumbnailUrl": "/images/drifit-white.jpg",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -193,80 +391,155 @@
       "isNew": true,
       "variants": [
         {
-          "id": 14,
-          "size": "S",
+          "id": 16,
           "colour": "White",
-          "price": 600,
-          "stock": 12,
-          "imageUrl": "/images/drifit-white.jpg"
+          "imageUrl": "/images/drifit-white.jpg",
+          "sizes": [
+            {
+              "id": 28,
+              "size": "S",
+              "price": 600,
+              "stock": 12
+            },
+            {
+              "id": 29,
+              "size": "M",
+              "price": 620,
+              "stock": 9
+            }
+          ]
         },
         {
-          "id": 15,
-          "size": "M",
-          "colour": "White",
-          "price": 620,
-          "stock": 9,
-          "imageUrl": "/images/drifit-white.jpg"
+          "id": 17,
+          "colour": "Black",
+          "imageUrl": "/images/nike-dri-fit-tee-black.jpg",
+          "sizes": [
+            {
+              "id": 30,
+              "size": "S",
+              "price": 600,
+              "stock": 12
+            },
+            {
+              "id": 31,
+              "size": "M",
+              "price": 620,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
     {
       "id": 108,
       "name": "Nike Running Shorts",
+      "slug": "nike-running-shorts",
+      "description": "Running shorts designed for lightweight comfort and unrestricted movement.",
+      "thumbnailUrl": "/images/shorts-grey.jpg",
       "brand": "Nike",
       "gender": "Men",
-      "categoryId": 2,
-      "typeId": 4,
-      "isNew": false,
-      "variants": [
-        {
-          "id": 16,
-          "size": "M",
-          "colour": "Grey",
-          "price": 700,
-          "stock": 10,
-          "imageUrl": "/images/shorts-grey.jpg"
-        },
-        {
-          "id": 17,
-          "size": "L",
-          "colour": "Grey",
-          "price": 720,
-          "stock": 8,
-          "imageUrl": "/images/shorts-grey.jpg"
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "name": "Nike Running Leggings",
-      "brand": "Nike",
-      "gender": "Women",
       "categoryId": 2,
       "typeId": 4,
       "isNew": false,
       "variants": [
         {
           "id": 18,
-          "size": "S",
-          "colour": "Black",
-          "price": 800,
-          "stock": 10,
-          "imageUrl": "/images/leggings-black.jpg"
+          "colour": "Grey",
+          "imageUrl": "/images/shorts-grey.jpg",
+          "sizes": [
+            {
+              "id": 32,
+              "size": "M",
+              "price": 700,
+              "stock": 10
+            },
+            {
+              "id": 33,
+              "size": "L",
+              "price": 720,
+              "stock": 8
+            }
+          ]
         },
         {
           "id": 19,
-          "size": "M",
           "colour": "Black",
-          "price": 820,
-          "stock": 8,
-          "imageUrl": "/images/leggings-black.jpg"
+          "imageUrl": "/images/nike-running-shorts-black.jpg",
+          "sizes": [
+            {
+              "id": 34,
+              "size": "M",
+              "price": 700,
+              "stock": 10
+            },
+            {
+              "id": 35,
+              "size": "L",
+              "price": 720,
+              "stock": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Nike Running Leggings",
+      "slug": "nike-running-leggings",
+      "description": "Supportive running leggings built for training comfort and everyday performance.",
+      "thumbnailUrl": "/images/leggings-black.jpg",
+      "brand": "Nike",
+      "gender": "Women",
+      "categoryId": 2,
+      "typeId": 4,
+      "isNew": false,
+      "variants": [
+        {
+          "id": 20,
+          "colour": "Black",
+          "imageUrl": "/images/leggings-black.jpg",
+          "sizes": [
+            {
+              "id": 36,
+              "size": "S",
+              "price": 800,
+              "stock": 10
+            },
+            {
+              "id": 37,
+              "size": "M",
+              "price": 820,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "colour": "White",
+          "imageUrl": "/images/nike-running-leggings-white.jpg",
+          "sizes": [
+            {
+              "id": 38,
+              "size": "S",
+              "price": 800,
+              "stock": 10
+            },
+            {
+              "id": 39,
+              "size": "M",
+              "price": 820,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 110,
       "name": "Nike Kids Sport Tee",
+      "slug": "nike-kids-sport-tee",
+      "description": "Kids' sport tee made for active days with lightweight, breathable comfort.",
+      "thumbnailUrl": "/images/kids-tee-blue.jpg",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 2,
@@ -274,81 +547,174 @@
       "isNew": true,
       "variants": [
         {
-          "id": 20,
-          "size": "S",
-          "colour": "Blue",
-          "price": 500,
-          "stock": 12,
-          "imageUrl": "/images/kids-tee-blue.jpg"
-        },
-        {
-          "id": 21,
-          "size": "M",
-          "colour": "Blue",
-          "price": 520,
-          "stock": 9,
-          "imageUrl": "/images/kids-tee-blue.jpg"
-        }
-      ]
-    },
-
-    {
-      "id": 111,
-      "name": "Nike Air Max Alpha",
-      "brand": "Nike",
-      "gender": "Men",
-      "categoryId": 1,
-      "typeId": 3,
-      "isNew": false,
-      "variants": [
-        {
           "id": 22,
-          "size": "8",
-          "colour": "Black",
-          "price": 2000,
-          "stock": 10,
-          "imageUrl": "/images/alpha-black.jpg"
+          "colour": "Blue",
+          "imageUrl": "/images/kids-tee-blue.jpg",
+          "sizes": [
+            {
+              "id": 40,
+              "size": "S",
+              "price": 500,
+              "stock": 12
+            },
+            {
+              "id": 41,
+              "size": "M",
+              "price": 520,
+              "stock": 9
+            }
+          ]
         },
         {
           "id": 23,
-          "size": "9",
-          "colour": "Black",
-          "price": 2020,
-          "stock": 8,
-          "imageUrl": "/images/alpha-black.jpg"
+          "colour": "Red",
+          "imageUrl": "/images/nike-kids-sport-tee-red.jpg",
+          "sizes": [
+            {
+              "id": 42,
+              "size": "S",
+              "price": 500,
+              "stock": 12
+            },
+            {
+              "id": 43,
+              "size": "M",
+              "price": 520,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
     {
-      "id": 112,
-      "name": "Nike Court Vision",
+      "id": 111,
+      "name": "Nike Air Max Alpha",
+      "slug": "nike-air-max-alpha",
+      "description": "Training shoes with a stable feel and durable build for gym and everyday use.",
+      "thumbnailUrl": "/images/alpha-black.jpg",
       "brand": "Nike",
-      "gender": "Women",
+      "gender": "Men",
       "categoryId": 1,
       "typeId": 3,
       "isNew": false,
       "variants": [
         {
           "id": 24,
-          "size": "6",
-          "colour": "White",
-          "price": 1900,
-          "stock": 10,
-          "imageUrl": "/images/court-white.jpg"
+          "colour": "Black",
+          "imageUrl": "/images/alpha-black.jpg",
+          "sizes": [
+            {
+              "id": 44,
+              "size": "8",
+              "price": 2000,
+              "stock": 10
+            },
+            {
+              "id": 45,
+              "size": "9",
+              "price": 2020,
+              "stock": 8
+            }
+          ]
         },
         {
           "id": 25,
-          "size": "7",
           "colour": "White",
-          "price": 1920,
-          "stock": 8,
-          "imageUrl": "/images/court-white.jpg"
+          "imageUrl": "/images/nike-air-max-alpha-white.jpg",
+          "sizes": [
+            {
+              "id": 46,
+              "size": "8",
+              "price": 2000,
+              "stock": 10
+            },
+            {
+              "id": 47,
+              "size": "9",
+              "price": 2020,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "colour": "Blue",
+          "imageUrl": "/images/nike-air-max-alpha-blue.jpg",
+          "sizes": [
+            {
+              "id": 48,
+              "size": "8",
+              "price": 2000,
+              "stock": 10
+            },
+            {
+              "id": 49,
+              "size": "9",
+              "price": 2020,
+              "stock": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Nike Court Vision",
+      "slug": "nike-court-vision",
+      "description": "Classic lifestyle sneakers with clean styling and comfortable everyday wear.",
+      "thumbnailUrl": "/images/court-white.jpg",
+      "brand": "Nike",
+      "gender": "Women",
+      "categoryId": 1,
+      "typeId": 3,
+      "isNew": false,
+      "variants": [
+        {
+          "id": 27,
+          "colour": "White",
+          "imageUrl": "/images/court-white.jpg",
+          "sizes": [
+            {
+              "id": 50,
+              "size": "6",
+              "price": 1900,
+              "stock": 10
+            },
+            {
+              "id": 51,
+              "size": "7",
+              "price": 1920,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "colour": "Black",
+          "imageUrl": "/images/nike-court-vision-black.jpg",
+          "sizes": [
+            {
+              "id": 52,
+              "size": "6",
+              "price": 1900,
+              "stock": 10
+            },
+            {
+              "id": 53,
+              "size": "7",
+              "price": 1920,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 113,
       "name": "Nike Kids Trainers",
+      "slug": "nike-kids-trainers",
+      "description": "Durable kids' trainers built for daily use, play, and all-day comfort.",
+      "thumbnailUrl": "/images/kids-trainers.jpg",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -356,19 +722,26 @@
       "isNew": false,
       "variants": [
         {
-          "id": 26,
-          "size": "3",
+          "id": 29,
           "colour": "Black",
-          "price": 1300,
-          "stock": 10,
-          "imageUrl": "/images/kids-trainers.jpg"
+          "imageUrl": "/images/kids-trainers.jpg",
+          "sizes": [
+            {
+              "id": 54,
+              "size": "3",
+              "price": 1300,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 114,
       "name": "Nike Club Hoodie",
+      "slug": "nike-club-hoodie",
+      "description": "Warm fleece hoodie designed for casual comfort and everyday layering.",
+      "thumbnailUrl": "/images/hoodie-grey.jpg",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -376,26 +749,70 @@
       "isNew": true,
       "variants": [
         {
-          "id": 27,
-          "size": "M",
+          "id": 30,
           "colour": "Grey",
-          "price": 900,
-          "stock": 10,
-          "imageUrl": "/images/hoodie-grey.jpg"
+          "imageUrl": "/images/hoodie-grey.jpg",
+          "sizes": [
+            {
+              "id": 55,
+              "size": "M",
+              "price": 900,
+              "stock": 10
+            },
+            {
+              "id": 56,
+              "size": "L",
+              "price": 920,
+              "stock": 8
+            }
+          ]
         },
         {
-          "id": 28,
-          "size": "L",
-          "colour": "Grey",
-          "price": 920,
-          "stock": 8,
-          "imageUrl": "/images/hoodie-grey.jpg"
+          "id": 31,
+          "colour": "Black",
+          "imageUrl": "/images/nike-club-hoodie-black.jpg",
+          "sizes": [
+            {
+              "id": 57,
+              "size": "M",
+              "price": 900,
+              "stock": 10
+            },
+            {
+              "id": 58,
+              "size": "L",
+              "price": 920,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "colour": "White",
+          "imageUrl": "/images/nike-club-hoodie-white.jpg",
+          "sizes": [
+            {
+              "id": 59,
+              "size": "M",
+              "price": 900,
+              "stock": 10
+            },
+            {
+              "id": 60,
+              "size": "L",
+              "price": 920,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 115,
       "name": "Nike Essential Tee",
+      "slug": "nike-essential-tee",
+      "description": "Essential everyday tee with a soft feel and clean athletic styling.",
+      "thumbnailUrl": "/images/tee-black.jpg",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -403,26 +820,51 @@
       "isNew": false,
       "variants": [
         {
-          "id": 29,
-          "size": "S",
+          "id": 33,
           "colour": "Black",
-          "price": 550,
-          "stock": 10,
-          "imageUrl": "/images/tee-black.jpg"
+          "imageUrl": "/images/tee-black.jpg",
+          "sizes": [
+            {
+              "id": 61,
+              "size": "S",
+              "price": 550,
+              "stock": 10
+            },
+            {
+              "id": 62,
+              "size": "M",
+              "price": 570,
+              "stock": 8
+            }
+          ]
         },
         {
-          "id": 30,
-          "size": "M",
-          "colour": "Black",
-          "price": 570,
-          "stock": 8,
-          "imageUrl": "/images/tee-black.jpg"
+          "id": 34,
+          "colour": "White",
+          "imageUrl": "/images/nike-essential-tee-white.jpg",
+          "sizes": [
+            {
+              "id": 63,
+              "size": "S",
+              "price": 550,
+              "stock": 10
+            },
+            {
+              "id": 64,
+              "size": "M",
+              "price": 570,
+              "stock": 8
+            }
+          ]
         }
       ]
     },
     {
       "id": 116,
       "name": "Nike Kids Hoodie",
+      "slug": "nike-kids-hoodie",
+      "description": "Kids' hoodie built for warmth, comfort, and everyday wear.",
+      "thumbnailUrl": "/images/kids-hoodie.jpg",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -430,195 +872,106 @@
       "isNew": true,
       "variants": [
         {
-          "id": 31,
-          "size": "S",
+          "id": 35,
           "colour": "Red",
-          "price": 700,
-          "stock": 10,
-          "imageUrl": "/images/kids-hoodie.jpg"
+          "imageUrl": "/images/kids-hoodie.jpg",
+          "sizes": [
+            {
+              "id": 65,
+              "size": "S",
+              "price": 700,
+              "stock": 10
+            }
+          ]
         }
       ]
     },
-
     {
       "id": 117,
       "name": "Nike Flex Runner",
+      "slug": "nike-flex-runner",
+      "description": "Flexible running shoes made for easy movement and lightweight comfort.",
+      "thumbnailUrl": "/images/flex-green.jpg",
       "brand": "Nike",
       "gender": "Men",
-      "categoryId": 2,
+      "categoryId": 1,
       "typeId": 3,
       "isNew": false,
       "variants": [
         {
-          "id": 32,
-          "size": "8",
+          "id": 36,
           "colour": "Green",
-          "price": 2100,
-          "stock": 9,
-          "imageUrl": "/images/flex-green.jpg"
+          "imageUrl": "/images/flex-green.jpg",
+          "sizes": [
+            {
+              "id": 66,
+              "size": "8",
+              "price": 2100,
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "colour": "Black",
+          "imageUrl": "/images/nike-flex-runner-black.jpg",
+          "sizes": [
+            {
+              "id": 67,
+              "size": "8",
+              "price": 2100,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
     {
       "id": 118,
       "name": "Nike Air Zoom Elite",
+      "slug": "nike-air-zoom-elite",
+      "description": "Performance running shoes with responsive cushioning for faster-paced training.",
+      "thumbnailUrl": "/images/zoom-purple.jpg",
       "brand": "Nike",
       "gender": "Women",
-      "categoryId": 2,
+      "categoryId": 1,
       "typeId": 3,
       "isNew": true,
       "variants": [
         {
-          "id": 33,
-          "size": "6",
+          "id": 38,
           "colour": "Purple",
-          "price": 2300,
-          "stock": 9,
-          "imageUrl": "/images/zoom-purple.jpg"
+          "imageUrl": "/images/zoom-purple.jpg",
+          "sizes": [
+            {
+              "id": 68,
+              "size": "6",
+              "price": 2300,
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "colour": "Black",
+          "imageUrl": "/images/nike-air-zoom-elite-black.jpg",
+          "sizes": [
+            {
+              "id": 69,
+              "size": "6",
+              "price": 2300,
+              "stock": 9
+            }
+          ]
         }
       ]
     },
     {
       "id": 119,
       "name": "Nike Track Pants",
-      "brand": "Nike",
-      "gender": "Men",
-      "categoryId": 2,
-      "typeId": 4,
-      "isNew": false,
-      "variants": [
-        {
-          "id": 34,
-          "size": "M",
-          "colour": "Black",
-          "price": 800,
-          "stock": 10,
-          "imageUrl": "/images/trackpants.jpg"
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "name": "Nike Sports Bra",
-      "brand": "Nike",
-      "gender": "Women",
-      "categoryId": 2,
-      "typeId": 4,
-      "isNew": true,
-      "variants": [
-        {
-          "id": 35,
-          "size": "S",
-          "colour": "Pink",
-          "price": 600,
-          "stock": 10,
-          "imageUrl": "/images/bra.jpg"
-        }
-      ]
-    },
-    {
-      "id": 121,
-      "name": "Nike Kids Shorts",
-      "brand": "Nike",
-      "gender": "Kids",
-      "categoryId": 2,
-      "typeId": 4,
-      "isNew": false,
-      "variants": [
-        {
-          "id": 36,
-          "size": "S",
-          "colour": "Blue",
-          "price": 450,
-          "stock": 10,
-          "imageUrl": "/images/kids-shorts.jpg"
-        }
-      ]
-    },
-    {
-      "id": 122,
-      "name": "Nike Winflo 10",
-      "brand": "Nike",
-      "gender": "Men",
-      "categoryId": 2,
-      "typeId": 3,
-      "isNew": true,
-      "variants": [
-        {
-          "id": 37,
-          "size": "8",
-          "colour": "Black",
-          "price": 2400,
-          "stock": 9,
-          "imageUrl": "/images/winflo-black.jpg"
-        },
-        {
-          "id": 38,
-          "size": "9",
-          "colour": "Black",
-          "price": 2420,
-          "stock": 7,
-          "imageUrl": "/images/winflo-black.jpg"
-        }
-      ]
-    },
-    {
-      "id": 123,
-      "name": "Nike One Leggings",
-      "brand": "Nike",
-      "gender": "Women",
-      "categoryId": 2,
-      "typeId": 4,
-      "isNew": false,
-      "variants": [
-        {
-          "id": 39,
-          "size": "S",
-          "colour": "Grey",
-          "price": 780,
-          "stock": 10,
-          "imageUrl": "/images/one-leggings-grey.jpg"
-        },
-        {
-          "id": 40,
-          "size": "M",
-          "colour": "Grey",
-          "price": 800,
-          "stock": 8,
-          "imageUrl": "/images/one-leggings-grey.jpg"
-        }
-      ]
-    },
-    {
-      "id": 124,
-      "name": "Nike Star Runner",
-      "brand": "Nike",
-      "gender": "Kids",
-      "categoryId": 2,
-      "typeId": 3,
-      "isNew": true,
-      "variants": [
-        {
-          "id": 41,
-          "size": "2",
-          "colour": "Blue",
-          "price": 1300,
-          "stock": 10,
-          "imageUrl": "/images/star-runner-blue.jpg"
-        },
-        {
-          "id": 42,
-          "size": "3",
-          "colour": "Blue",
-          "price": 1320,
-          "stock": 8,
-          "imageUrl": "/images/star-runner-blue.jpg"
-        }
-      ]
-    },
-    {
-      "id": 125,
-      "name": "Nike Club Joggers",
+      "slug": "nike-track-pants",
+      "description": "Track pants designed for training, recovery, and casual wear.",
+      "thumbnailUrl": "/images/trackpants.jpg",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -626,20 +979,311 @@
       "isNew": false,
       "variants": [
         {
-          "id": 43,
-          "size": "M",
+          "id": 40,
           "colour": "Black",
-          "price": 850,
-          "stock": 10,
-          "imageUrl": "/images/joggers-black.jpg"
+          "imageUrl": "/images/trackpants.jpg",
+          "sizes": [
+            {
+              "id": 70,
+              "size": "M",
+              "price": 800,
+              "stock": 10
+            }
+          ]
         },
         {
+          "id": 41,
+          "colour": "Grey",
+          "imageUrl": "/images/nike-track-pants-grey.jpg",
+          "sizes": [
+            {
+              "id": 71,
+              "size": "M",
+              "price": 800,
+              "stock": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Nike Sports Bra",
+      "slug": "nike-sports-bra",
+      "description": "Supportive sports bra designed for light training and everyday comfort.",
+      "thumbnailUrl": "/images/bra.jpg",
+      "brand": "Nike",
+      "gender": "Women",
+      "categoryId": 1,
+      "typeId": 4,
+      "isNew": true,
+      "variants": [
+        {
+          "id": 42,
+          "colour": "Pink",
+          "imageUrl": "/images/bra.jpg",
+          "sizes": [
+            {
+              "id": 72,
+              "size": "S",
+              "price": 600,
+              "stock": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "Nike Kids Shorts",
+      "slug": "nike-kids-shorts",
+      "description": "Kids' shorts made for sport, play, and comfortable daily wear.",
+      "thumbnailUrl": "/images/kids-shorts.jpg",
+      "brand": "Nike",
+      "gender": "Kids",
+      "categoryId": 1,
+      "typeId": 4,
+      "isNew": false,
+      "variants": [
+        {
+          "id": 43,
+          "colour": "Blue",
+          "imageUrl": "/images/kids-shorts.jpg",
+          "sizes": [
+            {
+              "id": 73,
+              "size": "S",
+              "price": 450,
+              "stock": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "name": "Nike Winflo 10",
+      "slug": "nike-winflo-10",
+      "description": "Daily running shoes with balanced cushioning for regular training runs.",
+      "thumbnailUrl": "/images/winflo-black.jpg",
+      "brand": "Nike",
+      "gender": "Men",
+      "categoryId": 2,
+      "typeId": 3,
+      "isNew": true,
+      "variants": [
+        {
           "id": 44,
-          "size": "L",
           "colour": "Black",
-          "price": 870,
-          "stock": 8,
-          "imageUrl": "/images/joggers-black.jpg"
+          "imageUrl": "/images/winflo-black.jpg",
+          "sizes": [
+            {
+              "id": 74,
+              "size": "8",
+              "price": 2400,
+              "stock": 9
+            },
+            {
+              "id": 75,
+              "size": "9",
+              "price": 2420,
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "colour": "White",
+          "imageUrl": "/images/nike-winflo-10-white.jpg",
+          "sizes": [
+            {
+              "id": 76,
+              "size": "8",
+              "price": 2400,
+              "stock": 9
+            },
+            {
+              "id": 77,
+              "size": "9",
+              "price": 2420,
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "colour": "Blue",
+          "imageUrl": "/images/nike-winflo-10-blue.jpg",
+          "sizes": [
+            {
+              "id": 78,
+              "size": "8",
+              "price": 2400,
+              "stock": 9
+            },
+            {
+              "id": 79,
+              "size": "9",
+              "price": 2420,
+              "stock": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "Nike One Leggings",
+      "slug": "nike-one-leggings",
+      "description": "Versatile leggings with a supportive fit for workouts and everyday use.",
+      "thumbnailUrl": "/images/one-leggings-grey.jpg",
+      "brand": "Nike",
+      "gender": "Women",
+      "categoryId": 1,
+      "typeId": 4,
+      "isNew": false,
+      "variants": [
+        {
+          "id": 47,
+          "colour": "Grey",
+          "imageUrl": "/images/one-leggings-grey.jpg",
+          "sizes": [
+            {
+              "id": 80,
+              "size": "S",
+              "price": 780,
+              "stock": 10
+            },
+            {
+              "id": 81,
+              "size": "M",
+              "price": 800,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "colour": "Black",
+          "imageUrl": "/images/nike-one-leggings-black.jpg",
+          "sizes": [
+            {
+              "id": 82,
+              "size": "S",
+              "price": 780,
+              "stock": 10
+            },
+            {
+              "id": 83,
+              "size": "M",
+              "price": 800,
+              "stock": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Nike Star Runner",
+      "slug": "nike-star-runner",
+      "description": "Kids' running shoes built for comfort, grip, and everyday activity.",
+      "thumbnailUrl": "/images/star-runner-blue.jpg",
+      "brand": "Nike",
+      "gender": "Kids",
+      "categoryId": 1,
+      "typeId": 3,
+      "isNew": true,
+      "variants": [
+        {
+          "id": 49,
+          "colour": "Blue",
+          "imageUrl": "/images/star-runner-blue.jpg",
+          "sizes": [
+            {
+              "id": 84,
+              "size": "2",
+              "price": 1300,
+              "stock": 10
+            },
+            {
+              "id": 85,
+              "size": "3",
+              "price": 1320,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "colour": "Red",
+          "imageUrl": "/images/nike-star-runner-red.jpg",
+          "sizes": [
+            {
+              "id": 86,
+              "size": "2",
+              "price": 1300,
+              "stock": 10
+            },
+            {
+              "id": 87,
+              "size": "3",
+              "price": 1320,
+              "stock": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "Nike Club Joggers",
+      "slug": "nike-club-joggers",
+      "description": "Comfortable joggers made for training warm-ups and casual everyday wear.",
+      "thumbnailUrl": "/images/joggers-black.jpg",
+      "brand": "Nike",
+      "gender": "Men",
+      "categoryId": 1,
+      "typeId": 4,
+      "isNew": false,
+      "variants": [
+        {
+          "id": 51,
+          "colour": "Black",
+          "imageUrl": "/images/joggers-black.jpg",
+          "sizes": [
+            {
+              "id": 88,
+              "size": "M",
+              "price": 850,
+              "stock": 10
+            },
+            {
+              "id": 89,
+              "size": "L",
+              "price": 870,
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "colour": "Grey",
+          "imageUrl": "/images/nike-club-joggers-grey.jpg",
+          "sizes": [
+            {
+              "id": 90,
+              "size": "M",
+              "price": 850,
+              "stock": 10
+            },
+            {
+              "id": 91,
+              "size": "L",
+              "price": 870,
+              "stock": 8
+            }
+          ]
         }
       ]
     }
