@@ -32,7 +32,7 @@
       "name": "Nike Pegasus 42",
       "slug": "nike-pegasus-42",
       "description": "Responsive everyday running shoes built for regular training with smooth cushioning and reliable comfort.",
-      "thumbnailUrl": "/images/pegasus-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -42,7 +42,7 @@
         {
           "id": 1,
           "colour": "Black",
-          "imageUrl": "/images/pegasus-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 1,
@@ -61,7 +61,7 @@
         {
           "id": 2,
           "colour": "White",
-          "imageUrl": "/images/pegasus-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 3,
@@ -74,7 +74,7 @@
         {
           "id": 3,
           "colour": "Blue",
-          "imageUrl": "/images/nike-pegasus-42-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 4,
@@ -97,7 +97,7 @@
       "name": "Nike Zoom Fly",
       "slug": "nike-zoom-fly",
       "description": "Lightweight running shoes designed for faster training days and steady road mileage.",
-      "thumbnailUrl": "/images/zoomfly-blue.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -107,7 +107,7 @@
         {
           "id": 4,
           "colour": "Blue",
-          "imageUrl": "/images/zoomfly-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 6,
@@ -126,7 +126,7 @@
         {
           "id": 5,
           "colour": "Black",
-          "imageUrl": "/images/nike-zoom-fly-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 8,
@@ -145,7 +145,7 @@
         {
           "id": 6,
           "colour": "White",
-          "imageUrl": "/images/nike-zoom-fly-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 10,
@@ -168,7 +168,7 @@
       "name": "Nike Revolution 6",
       "slug": "nike-revolution-6",
       "description": "Soft cushioned running shoes built for everyday comfort and easy-paced workouts.",
-      "thumbnailUrl": "/images/revolution-pink.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -178,7 +178,7 @@
         {
           "id": 7,
           "colour": "Pink",
-          "imageUrl": "/images/revolution-pink.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 12,
@@ -197,7 +197,7 @@
         {
           "id": 8,
           "colour": "Black",
-          "imageUrl": "/images/nike-revolution-6-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 14,
@@ -220,7 +220,7 @@
       "name": "Nike Downshifter",
       "slug": "nike-downshifter",
       "description": "Versatile running shoes with a supportive fit for daily exercise and casual wear.",
-      "thumbnailUrl": "/images/downshifter-grey.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -230,7 +230,7 @@
         {
           "id": 9,
           "colour": "Grey",
-          "imageUrl": "/images/downshifter-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 16,
@@ -249,7 +249,7 @@
         {
           "id": 10,
           "colour": "Black",
-          "imageUrl": "/images/nike-downshifter-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 18,
@@ -272,7 +272,7 @@
       "name": "Nike Kids Runner",
       "slug": "nike-kids-runner",
       "description": "Comfortable kids' running shoes made for school, play, and everyday movement.",
-      "thumbnailUrl": "/images/kids-runner-red.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 2,
@@ -282,7 +282,7 @@
         {
           "id": 11,
           "colour": "Red",
-          "imageUrl": "/images/kids-runner-red.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 20,
@@ -295,7 +295,7 @@
         {
           "id": 12,
           "colour": "Blue",
-          "imageUrl": "/images/kids-runner-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 21,
@@ -312,7 +312,7 @@
       "name": "Nike Miler Running Top",
       "slug": "nike-miler-running-top",
       "description": "Breathable running top built to keep you cool during training sessions.",
-      "thumbnailUrl": "/images/miler-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -322,7 +322,7 @@
         {
           "id": 13,
           "colour": "Black",
-          "imageUrl": "/images/miler-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 22,
@@ -341,7 +341,7 @@
         {
           "id": 14,
           "colour": "Grey",
-          "imageUrl": "/images/nike-miler-running-top-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 24,
@@ -360,7 +360,7 @@
         {
           "id": 15,
           "colour": "White",
-          "imageUrl": "/images/nike-miler-running-top-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 26,
@@ -383,7 +383,7 @@
       "name": "Nike Dri-FIT Tee",
       "slug": "nike-dri-fit-tee",
       "description": "Lightweight Dri-FIT training tee with a soft feel for everyday workouts.",
-      "thumbnailUrl": "/images/drifit-white.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -393,7 +393,7 @@
         {
           "id": 16,
           "colour": "White",
-          "imageUrl": "/images/drifit-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 28,
@@ -412,7 +412,7 @@
         {
           "id": 17,
           "colour": "Black",
-          "imageUrl": "/images/nike-dri-fit-tee-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 30,
@@ -435,7 +435,7 @@
       "name": "Nike Running Shorts",
       "slug": "nike-running-shorts",
       "description": "Running shorts designed for lightweight comfort and unrestricted movement.",
-      "thumbnailUrl": "/images/shorts-grey.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -445,7 +445,7 @@
         {
           "id": 18,
           "colour": "Grey",
-          "imageUrl": "/images/shorts-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 32,
@@ -464,7 +464,7 @@
         {
           "id": 19,
           "colour": "Black",
-          "imageUrl": "/images/nike-running-shorts-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 34,
@@ -487,7 +487,7 @@
       "name": "Nike Running Leggings",
       "slug": "nike-running-leggings",
       "description": "Supportive running leggings built for training comfort and everyday performance.",
-      "thumbnailUrl": "/images/leggings-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 2,
@@ -497,7 +497,7 @@
         {
           "id": 20,
           "colour": "Black",
-          "imageUrl": "/images/leggings-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 36,
@@ -516,7 +516,7 @@
         {
           "id": 21,
           "colour": "White",
-          "imageUrl": "/images/nike-running-leggings-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 38,
@@ -539,7 +539,7 @@
       "name": "Nike Kids Sport Tee",
       "slug": "nike-kids-sport-tee",
       "description": "Kids' sport tee made for active days with lightweight, breathable comfort.",
-      "thumbnailUrl": "/images/kids-tee-blue.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 2,
@@ -549,7 +549,7 @@
         {
           "id": 22,
           "colour": "Blue",
-          "imageUrl": "/images/kids-tee-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 40,
@@ -568,7 +568,7 @@
         {
           "id": 23,
           "colour": "Red",
-          "imageUrl": "/images/nike-kids-sport-tee-red.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 42,
@@ -591,7 +591,7 @@
       "name": "Nike Air Max Alpha",
       "slug": "nike-air-max-alpha",
       "description": "Training shoes with a stable feel and durable build for gym and everyday use.",
-      "thumbnailUrl": "/images/alpha-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -601,7 +601,7 @@
         {
           "id": 24,
           "colour": "Black",
-          "imageUrl": "/images/alpha-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 44,
@@ -620,7 +620,7 @@
         {
           "id": 25,
           "colour": "White",
-          "imageUrl": "/images/nike-air-max-alpha-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 46,
@@ -639,7 +639,7 @@
         {
           "id": 26,
           "colour": "Blue",
-          "imageUrl": "/images/nike-air-max-alpha-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 48,
@@ -662,7 +662,7 @@
       "name": "Nike Court Vision",
       "slug": "nike-court-vision",
       "description": "Classic lifestyle sneakers with clean styling and comfortable everyday wear.",
-      "thumbnailUrl": "/images/court-white.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -672,7 +672,7 @@
         {
           "id": 27,
           "colour": "White",
-          "imageUrl": "/images/court-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 50,
@@ -691,7 +691,7 @@
         {
           "id": 28,
           "colour": "Black",
-          "imageUrl": "/images/nike-court-vision-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 52,
@@ -714,7 +714,7 @@
       "name": "Nike Kids Trainers",
       "slug": "nike-kids-trainers",
       "description": "Durable kids' trainers built for daily use, play, and all-day comfort.",
-      "thumbnailUrl": "/images/kids-trainers.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -724,7 +724,7 @@
         {
           "id": 29,
           "colour": "Black",
-          "imageUrl": "/images/kids-trainers.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 54,
@@ -741,7 +741,7 @@
       "name": "Nike Club Hoodie",
       "slug": "nike-club-hoodie",
       "description": "Warm fleece hoodie designed for casual comfort and everyday layering.",
-      "thumbnailUrl": "/images/hoodie-grey.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -751,7 +751,7 @@
         {
           "id": 30,
           "colour": "Grey",
-          "imageUrl": "/images/hoodie-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 55,
@@ -770,7 +770,7 @@
         {
           "id": 31,
           "colour": "Black",
-          "imageUrl": "/images/nike-club-hoodie-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 57,
@@ -789,7 +789,7 @@
         {
           "id": 32,
           "colour": "White",
-          "imageUrl": "/images/nike-club-hoodie-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 59,
@@ -812,7 +812,7 @@
       "name": "Nike Essential Tee",
       "slug": "nike-essential-tee",
       "description": "Essential everyday tee with a soft feel and clean athletic styling.",
-      "thumbnailUrl": "/images/tee-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -822,7 +822,7 @@
         {
           "id": 33,
           "colour": "Black",
-          "imageUrl": "/images/tee-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 61,
@@ -841,7 +841,7 @@
         {
           "id": 34,
           "colour": "White",
-          "imageUrl": "/images/nike-essential-tee-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 63,
@@ -864,7 +864,7 @@
       "name": "Nike Kids Hoodie",
       "slug": "nike-kids-hoodie",
       "description": "Kids' hoodie built for warmth, comfort, and everyday wear.",
-      "thumbnailUrl": "/images/kids-hoodie.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -874,7 +874,7 @@
         {
           "id": 35,
           "colour": "Red",
-          "imageUrl": "/images/kids-hoodie.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 65,
@@ -891,7 +891,7 @@
       "name": "Nike Flex Runner",
       "slug": "nike-flex-runner",
       "description": "Flexible running shoes made for easy movement and lightweight comfort.",
-      "thumbnailUrl": "/images/flex-green.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -901,7 +901,7 @@
         {
           "id": 36,
           "colour": "Green",
-          "imageUrl": "/images/flex-green.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 66,
@@ -914,7 +914,7 @@
         {
           "id": 37,
           "colour": "Black",
-          "imageUrl": "/images/nike-flex-runner-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 67,
@@ -931,7 +931,7 @@
       "name": "Nike Air Zoom Elite",
       "slug": "nike-air-zoom-elite",
       "description": "Performance running shoes with responsive cushioning for faster-paced training.",
-      "thumbnailUrl": "/images/zoom-purple.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -941,7 +941,7 @@
         {
           "id": 38,
           "colour": "Purple",
-          "imageUrl": "/images/zoom-purple.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 68,
@@ -954,7 +954,7 @@
         {
           "id": 39,
           "colour": "Black",
-          "imageUrl": "/images/nike-air-zoom-elite-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 69,
@@ -971,7 +971,7 @@
       "name": "Nike Track Pants",
       "slug": "nike-track-pants",
       "description": "Track pants designed for training, recovery, and casual wear.",
-      "thumbnailUrl": "/images/trackpants.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -981,7 +981,7 @@
         {
           "id": 40,
           "colour": "Black",
-          "imageUrl": "/images/trackpants.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 70,
@@ -994,7 +994,7 @@
         {
           "id": 41,
           "colour": "Grey",
-          "imageUrl": "/images/nike-track-pants-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 71,
@@ -1011,7 +1011,7 @@
       "name": "Nike Sports Bra",
       "slug": "nike-sports-bra",
       "description": "Supportive sports bra designed for light training and everyday comfort.",
-      "thumbnailUrl": "/images/bra.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -1021,7 +1021,7 @@
         {
           "id": 42,
           "colour": "Pink",
-          "imageUrl": "/images/bra.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 72,
@@ -1038,7 +1038,7 @@
       "name": "Nike Kids Shorts",
       "slug": "nike-kids-shorts",
       "description": "Kids' shorts made for sport, play, and comfortable daily wear.",
-      "thumbnailUrl": "/images/kids-shorts.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -1048,7 +1048,7 @@
         {
           "id": 43,
           "colour": "Blue",
-          "imageUrl": "/images/kids-shorts.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 73,
@@ -1065,7 +1065,7 @@
       "name": "Nike Winflo 10",
       "slug": "nike-winflo-10",
       "description": "Daily running shoes with balanced cushioning for regular training runs.",
-      "thumbnailUrl": "/images/winflo-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -1075,7 +1075,7 @@
         {
           "id": 44,
           "colour": "Black",
-          "imageUrl": "/images/winflo-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 74,
@@ -1094,7 +1094,7 @@
         {
           "id": 45,
           "colour": "White",
-          "imageUrl": "/images/nike-winflo-10-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 76,
@@ -1113,7 +1113,7 @@
         {
           "id": 46,
           "colour": "Blue",
-          "imageUrl": "/images/nike-winflo-10-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 78,
@@ -1136,7 +1136,7 @@
       "name": "Nike One Leggings",
       "slug": "nike-one-leggings",
       "description": "Versatile leggings with a supportive fit for workouts and everyday use.",
-      "thumbnailUrl": "/images/one-leggings-grey.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Women",
       "categoryId": 1,
@@ -1146,7 +1146,7 @@
         {
           "id": 47,
           "colour": "Grey",
-          "imageUrl": "/images/one-leggings-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 80,
@@ -1165,7 +1165,7 @@
         {
           "id": 48,
           "colour": "Black",
-          "imageUrl": "/images/nike-one-leggings-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 82,
@@ -1188,7 +1188,7 @@
       "name": "Nike Star Runner",
       "slug": "nike-star-runner",
       "description": "Kids' running shoes built for comfort, grip, and everyday activity.",
-      "thumbnailUrl": "/images/star-runner-blue.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Kids",
       "categoryId": 1,
@@ -1198,7 +1198,7 @@
         {
           "id": 49,
           "colour": "Blue",
-          "imageUrl": "/images/star-runner-blue.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 84,
@@ -1217,7 +1217,7 @@
         {
           "id": 50,
           "colour": "Red",
-          "imageUrl": "/images/nike-star-runner-red.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 86,
@@ -1240,7 +1240,7 @@
       "name": "Nike Club Joggers",
       "slug": "nike-club-joggers",
       "description": "Comfortable joggers made for training warm-ups and casual everyday wear.",
-      "thumbnailUrl": "/images/joggers-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 1,
@@ -1250,7 +1250,7 @@
         {
           "id": 51,
           "colour": "Black",
-          "imageUrl": "/images/joggers-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 88,
@@ -1269,7 +1269,7 @@
         {
           "id": 52,
           "colour": "Grey",
-          "imageUrl": "/images/nike-club-joggers-grey.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 90,

@@ -32,7 +32,7 @@
       "name": "Nike Pegasus 42",
       "slug": "nike-pegasus-42",
       "description": "Responsive everyday running shoes built for regular training with smooth cushioning and reliable comfort.",
-      "thumbnailUrl": "/images/pegasus-black.jpg",
+      "thumbnailUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
       "brand": "Nike",
       "gender": "Men",
       "categoryId": 2,
@@ -42,7 +42,7 @@
         {
           "id": 1,
           "colour": "Black",
-          "imageUrl": "/images/pegasus-black.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 1,
@@ -61,7 +61,7 @@
         {
           "id": 2,
           "colour": "White",
-          "imageUrl": "/images/pegasus-white.jpg",
+          "imageUrl": "https://ik.imagekit.io/a550fxxzq1l/ecomm-buhle/AIR+ZOOM+PEGASUS+42.avif",
           "sizes": [
             {
               "id": 3,
