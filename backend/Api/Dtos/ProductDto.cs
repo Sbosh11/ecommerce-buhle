@@ -8,6 +8,8 @@ namespace Api.Dtos
         public string Slug { get; set; } = "";
         public string? Description { get; set; }
 
+        public string ThumbnailUrl { get; set; } = "";
+
         public decimal Price { get; set; } // lowest price across all sizes
         public string Brand { get; set; } = "";
         public string Gender { get; set; } = "";

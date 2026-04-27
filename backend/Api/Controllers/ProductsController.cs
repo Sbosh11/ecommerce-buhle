@@ -43,6 +43,7 @@ namespace Api.Controllers
                     Name = p.Name,
                     Slug = p.Slug,
                     Description = p.Description,
+                    ThumbnailUrl = p.ThumbnailUrl,
                     Brand = p.Brand,
                     Gender = p.Gender,
                     CategoryId = p.CategoryId,

@@ -152,4 +152,10 @@ D:\Portfolio Projects\ecommerce\backend\api\obj\Debug\net10.0\refint\Api.dll
 D:\Portfolio Projects\ecommerce\backend\api\obj\Debug\net10.0\Api.pdb
 D:\Portfolio Projects\ecommerce\backend\api\obj\Debug\net10.0\Api.genruntimeconfig.cache
 D:\Portfolio Projects\ecommerce\backend\api\obj\Debug\net10.0\ref\Api.dll
-D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\Seed\seedData-old.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\web.config
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\Api.deps.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\Api.runtimeconfig.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\Api.staticwebassets.endpoints.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\appsettings.Development.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\appsettings.json
+D:\Portfolio Projects\ecommerce\backend\api\bin\Debug\net10.0\publish\Seed\seedData.json

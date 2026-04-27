@@ -75,6 +75,10 @@ namespace Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ThumbnailUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("TypeId")
                         .HasColumnType("INTEGER");
 
