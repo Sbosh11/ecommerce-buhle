@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj": {}
+    "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj": {}
   },
   "projects": {
-    "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj": {
+    "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj",
+        "projectUniqueName": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\Api.csproj",
+        "projectPath": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\Sibongile\\.nuget\\packages\\",
-        "outputPath": "D:\\Portfolio Projects\\ecommerce\\backend\\api\\obj\\",
+        "outputPath": "D:\\Portfolio Projects\\ecommerce\\backend\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sibongile\\AppData\\Roaming\\NuGet\\NuGet.Config"

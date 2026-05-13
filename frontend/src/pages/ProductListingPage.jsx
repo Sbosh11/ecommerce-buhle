@@ -88,6 +88,21 @@ function ProductListingPage() {
 
   return (
     <main className="w-full mx-auto px-6 py-10">
+      <section className="mb-10 rounded-[2rem] bg-slate-100 px-8 py-10 shadow-sm">
+        <div className="max-w-4xl">
+          <p className="text-sm uppercase tracking-[0.28em] text-slate-500 mb-3">
+            {pageTitle} Collection
+          </p>
+          <h1 className="text-5xl font-bold tracking-tight text-slate-900">
+            Discover {pageTitle}
+          </h1>
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+            Explore our curated selection of {pageTitle.toLowerCase()} products,
+            designed for style and performance.
+          </p>
+        </div>
+      </section>
+
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-4xl font-bold">{pageTitle}</h1>
 
