@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import ProductListingPage from "./pages/ProductListingPage";
 import SportsPage from "./pages/SportsPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import "./App.css";
 
 function App() {
   return (
