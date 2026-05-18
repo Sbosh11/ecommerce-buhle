@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 function ProductFilters({ filters, setFilters, filterOptions, showFilters }) {
- const [openGroups, setOpenGroups] = useState({
-  gender: false,
-  category: false,
-  type: false,
-  colour: false,
-  size: false,
-});
+  const [openGroups, setOpenGroups] = useState({
+    gender: false,
+    category: false,
+    type: false,
+    colour: false,
+    size: false,
+  });
 
   if (!showFilters) return null;
 
@@ -73,14 +73,27 @@ function ProductFilters({ filters, setFilters, filterOptions, showFilters }) {
         onChange={(value) => handleCheckboxChange("colours", value)}
       />
 
-      <FilterGroup
-        title="Size"
-        isOpen={openGroups.size}
-        onToggle={() => toggleGroup("size")}
-        items={filterOptions.sizes}
-        selectedItems={filters.sizes}
-        onChange={(value) => handleCheckboxChange("sizes", value)}
-      />
+      {filterOptions.sizes?.clothing?.length > 0 && (
+        <FilterGroup
+          title="Clothing Size"
+          isOpen={openGroups.size}
+          onToggle={() => toggleGroup("size")}
+          items={filterOptions.sizes.clothing}
+          selectedItems={filters.sizes}
+          onChange={(value) => handleCheckboxChange("sizes", value)}
+        />
+      )}
+
+      {filterOptions.sizes?.numeric?.length > 0 && (
+        <FilterGroup
+          title="Shoe Size"
+          isOpen={openGroups.size}
+          onToggle={() => toggleGroup("size")}
+          items={filterOptions.sizes.numeric}
+          selectedItems={filters.sizes}
+          onChange={(value) => handleCheckboxChange("sizes", value)}
+        />
+      )}
     </aside>
   );
 }

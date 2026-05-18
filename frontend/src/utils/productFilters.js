@@ -12,15 +12,41 @@ export function buildFilterOptions(products, categories) {
     ),
   ];
 
-  const sizes = [
-    ...new Set(
-      products.flatMap((product) =>
-        product.variants.flatMap((variant) =>
-          variant.sizes.map((size) => size.size),
-        ),
-      ),
-    ),
-  ];
+  const clothingType = categories.find(
+    (category) => category.slug === "clothing" || category.name === "Clothing",
+  );
+
+  const clothingSizeSet = new Set();
+  const numericSizeSet = new Set();
+
+  products.forEach((product) => {
+    const isClothing = clothingType && product.typeId === clothingType.id;
+
+    product.variants.forEach((variant) => {
+      variant.sizes.forEach((size) => {
+        if (isClothing) {
+          clothingSizeSet.add(size.size);
+        } else {
+          numericSizeSet.add(size.size);
+        }
+      });
+    });
+  });
+
+  const clothingSizes = ["S", "M", "L"].filter((size) =>
+    clothingSizeSet.has(size),
+  );
+
+  const numericSizes = [...numericSizeSet].sort((a, b) => {
+    const aNum = Number(a);
+    const bNum = Number(b);
+
+    if (!Number.isNaN(aNum) && !Number.isNaN(bNum)) {
+      return aNum - bNum;
+    }
+
+    return a.localeCompare(b);
+  });
 
   return {
     genders: genders.map((gender) => ({
@@ -51,10 +77,10 @@ export function buildFilterOptions(products, categories) {
       value: colour,
     })),
 
-    sizes: sizes.map((size) => ({
-      label: size,
-      value: size,
-    })),
+    sizes: {
+      clothing: clothingSizes.map((size) => ({ label: size, value: size })),
+      numeric: numericSizes.map((size) => ({ label: size, value: size })),
+    },
   };
 }
 

@@ -74,9 +74,16 @@ function ProductListingPage() {
     return products;
   }, [products, slug, type, selectedCategory]);
 
+  const availableFilterProducts = useMemo(() => {
+    return applyFilters(baseProducts, {
+      ...filters,
+      sizes: [],
+    });
+  }, [baseProducts, filters]);
+
   const filterOptions = useMemo(() => {
-    return buildFilterOptions(baseProducts, categories);
-  }, [baseProducts, categories]);
+    return buildFilterOptions(availableFilterProducts, categories);
+  }, [availableFilterProducts, categories]);
 
   const filteredProducts = useMemo(() => {
     const filtered = applyFilters(baseProducts, filters);
