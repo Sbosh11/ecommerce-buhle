@@ -39,17 +39,17 @@ function HomePage() {
   );
 
   return (
-    <main className="mx-auto flex flex-col w-full max-w-8xl justify-center flex-wrap items-center gap-6 px-6 py-5 md:gap-8 md:px-10 lg:px-14">
+    <main className="mx-auto flex flex-col w-full max-w-8xl content-center justify-center flex-wrap items-center gap-6 px-6 py-5 md:gap-8 md:px-10 lg:px-14">
       <section className=" w-full max-w-8xl rounded-4xl justify-center overflow-hidden bg-slate-950 text-white shadow-xl">
         <div className="flex flex-col gap-8 px-8 py-14 lg:flex-row lg:items-center lg:justify-between lg:px-16">
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-400 mb-4">
               Summer Drop 2026
             </p>
-            <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
+            <h1 className="text-4xl font-bold leading-tight text-white text-left sm:text-5xl">
               The best of Nike, ready to move.
             </h1>
-            <p className="mt-6 text-base leading-8 text-slate-300 max-w-xl">
+            <p className="mt-6 text-base leading-8 text-white text-left max-w-xl">
               Discover new arrivals, top-rated categories, and a curated
               selection of performance essentials to kick off your next training
               session.
@@ -69,7 +69,7 @@ function HomePage() {
               </Link>
             </div>
           </div>
-
+          {/** 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:w-96">
             <div className="rounded-3xl bg-white/10 p-6 text-slate-100">
               <p className="text-3xl font-bold">{products.length}</p>
@@ -83,11 +83,11 @@ function HomePage() {
               <p className="text-3xl font-bold">{newArrivals.length}</p>
               <p className="mt-2 text-sm text-slate-300">New Arrivals</p>
             </div>
-          </div>
+          </div>**/}
         </div>
       </section>
 
-      <section className="w-7xl justify-center mt-10">
+      <section className="w-full max-w-8xl justify-center mt-10">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-slate-500">
@@ -127,7 +127,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="w-7xl justify-center mt-12">
+      <section className="w-full max-w-8xl justify-center mt-12">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-slate-500">
