@@ -40,7 +40,7 @@ function HomePage() {
 
   return (
     <main className="mx-auto flex flex-col w-full max-w-8xl content-center justify-center flex-wrap items-center gap-6 px-6 py-5 md:gap-8 md:px-10 lg:px-14">
-      <section className=" w-full max-w-8xl rounded-4xl justify-center overflow-hidden bg-slate-950 text-white shadow-xl">
+      <section className=" w-full flex max-w-8xl rounded-4xl max-auto overflow-hidden bg-slate-950 text-white shadow-xl">
         <div className="flex flex-col gap-8 px-8 py-14 lg:flex-row lg:items-center lg:justify-between lg:px-16">
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.32em] text-slate-400 mb-4">
@@ -87,8 +87,8 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="w-full max-w-8xl justify-center mt-10">
-        <div className="flex items-end justify-between gap-4">
+      <section className="max-w-8xl mx-auto mt-10">
+        <div className="flex items-center justify-center gap-4">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-slate-500">
               Explore
@@ -105,7 +105,7 @@ function HomePage() {
           </Link>**/}
         </div>
 
-        <div className="mt-6 h-[500px] grid grid-cols-1 gap-4 xl:grid-cols-2">
+        <div className="mt-6 h-125 w-7xl mx-auto grid grid-cols-1 gap-4 xl:grid-cols-2">
           {productTypes.slice(0, 3).map((category) => (
             <Link
               key={category.id}
